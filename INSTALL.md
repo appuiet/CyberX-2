@@ -18,7 +18,7 @@ cd /Applications/XAMPP/htdocs    # для macOS
 cd /opt/lampp/htdocs  # для Linux
 
 # Клонируем репозиторий
-git clone https://github.com/appuiet/CyberX.git
+git clone https://github.com/appuiet/CyberX-2
 
 # Переходим в директорию проекта
 cd CyberX
