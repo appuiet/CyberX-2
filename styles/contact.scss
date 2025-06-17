@@ -1,0 +1,190 @@
+.contact {
+    font-family: Arial, sans-serif;
+    background-color: #0d0d0d;
+    padding: 60px 20px;
+    color: #f1f1f1;
+    min-height: 63vh;
+    display: flex;
+    align-items: center;
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 24px;
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    &__card {
+        background: linear-gradient(145deg,
+                rgba(20, 20, 20, 0.95),
+                rgba(30, 30, 30, 0.95));
+        border: 1px solid rgba(255, 0, 60, 0.3);
+        border-radius: 0;
+        padding: 24px;
+        box-shadow: inset 0 0 0 1px #ff003c, 0 0 20px rgba(255, 0, 60, 0.2);
+        transition: all 0.4s ease;
+        opacity: 0;
+        transform: scale(0.95) translateY(30px);
+        animation: cardZoomIn 1.4s ease forwards;
+        position: relative;
+
+        &:hover {
+            box-shadow: 0 0 30px #ff003c, inset 0 0 8px #ff003c;
+            transform: scale(1.02) translateY(-5px);
+            border-color: #ff003c;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            border: 2px solid transparent;
+            border-image: linear-gradient(45deg, #ff003c, #ff0066, #ff003c) 1;
+            z-index: 1;
+        }
+
+        * {
+            position: relative;
+            z-index: 2;
+        }
+
+        &--email {
+            text-align: center;
+
+            .contact__email {
+                color: #ff003c;
+                font-weight: bold;
+                font-size: 15px;
+                letter-spacing: 0.5px;
+            }
+        }
+    }
+
+    &__title {
+        color: #ff003c;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+    }
+
+    &__text {
+        font-size: 14px;
+        color: #cccccc;
+        line-height: 1.4;
+        margin: 4px 0;
+    }
+
+    &__card:nth-child(1) {
+        animation-delay: 0.1s;
+    }
+
+    &__card:nth-child(2) {
+        animation-delay: 0.2s;
+    }
+
+    &__card:nth-child(3) {
+        animation-delay: 0.3s;
+    }
+
+    &__card:nth-child(4) {
+        animation-delay: 0.4s;
+    }
+
+    &__card:nth-child(5) {
+        animation-delay: 0.5s;
+    }
+
+    &__card:nth-child(6) {
+        animation-delay: 0.6s;
+    }
+
+    &__card:nth-child(7) {
+        animation-delay: 0.7s;
+    }
+
+    &__card:nth-child(8) {
+        animation-delay: 0.8s;
+    }
+
+    &__card:nth-child(9) {
+        animation-delay: 0.9s;
+    }
+
+    @media (max-width: 768px) {
+        padding: 32px 12px;
+
+        &__grid {
+            grid-template-columns: 1fr;
+            gap: 18px;
+        }
+
+        &__card {
+            padding: 20px;
+            text-align: center;
+            border-radius: 12px;
+            border: none;
+            box-shadow: 0 0 15px rgba(255, 0, 60, 0.35);
+        }
+
+        &__title {
+            font-size: 16px;
+            margin-bottom: 6px;
+            color: #ff003c;
+        }
+
+        &__text {
+            font-size: 13.5px;
+            color: #dddddd;
+            line-height: 1.5;
+        }
+
+        &__card--email .contact__email {
+            font-size: 14.5px;
+            word-break: break-word;
+        }
+    }
+
+    @media (max-width: 480px) {
+        padding: 24px 10px;
+
+        &__card {
+            padding: 18px;
+        }
+
+        &__title {
+            font-size: 15px;
+        }
+
+        &__text {
+            font-size: 13px;
+        }
+
+        &__card--email .contact__email {
+            font-size: 13.5px;
+        }
+    }
+}
+
+@keyframes cardZoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.95) translateY(30px);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: scale(1.01);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}

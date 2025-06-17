@@ -1,0 +1,137 @@
+$footer-bg: #0a0a0a;
+$footer-text: #b0b0b0;
+$footer-accent: #e30a0e;
+
+.footer {
+    background: $footer-bg;
+    color: $footer-text;
+    padding: 40px 120px;
+    font-family: Arial, sans-serif;
+
+    @media (max-width: 768px) {
+        padding: 30px 20px;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    &__logo img {
+        width: 150px;
+        height: auto;
+        filter: drop-shadow(0 0 5px $footer-accent);
+        transition: transform 0.3s ease;
+        opacity: 0;
+        animation: fadeSlideUp 1s 0.3s ease forwards;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            width: 120px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__info {
+        font-size: 14px;
+        line-height: 1.6;
+        text-align: center;
+        opacity: 0;
+        animation: fadeSlideUp 1s 0.6s ease forwards;
+
+        p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            order: 2;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__social {
+        text-align: right;
+        opacity: 0;
+        animation: fadeSlideUp 1s 0.9s ease forwards;
+
+        &-text {
+            margin-bottom: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+
+            @media (max-width: 768px) {
+                text-align: center;
+            }
+        }
+
+        .footer__icons {
+            display: flex;
+            gap: 15px;
+            justify-content: flex-end;
+
+            @media (max-width: 768px) {
+                justify-content: center;
+                order: 3;
+                width: 100%;
+            }
+
+            a {
+                color: $footer-text;
+                font-size: 22px;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: $footer-accent;
+                }
+
+                i {
+                    display: inline-block;
+                    width: 34px;
+                    height: 34px;
+                    background-size: cover;
+                }
+
+                .icon-vk {
+                    background-image: url("/icons/vk.png");
+                }
+
+                .icon-instagram {
+                    background-image: url("/icons/instagram.png");
+                }
+
+                .icon-tiktok {
+                    background-image: url("/icons/tiktok.png");
+                }
+
+                .icon-twitch {
+                    background-image: url("/icons/twitch.png");
+                }
+            }
+        }
+    }
+}
+
+@keyframes fadeSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

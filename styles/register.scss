@@ -1,0 +1,228 @@
+$primary-color: #e30a0e;
+$background-color: #151414;
+$text-color: #fff;
+$font-main: "Orbitron", sans-serif;
+
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $background-color;
+    padding: 4rem 1rem;
+    min-height: 61.9vh;
+}
+
+.auth-form-container {
+    background: rgba(20, 20, 20, 0.9);
+    padding: 2.5rem 3rem;
+    border: 2px solid $primary-color;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba($primary-color, 0.6), inset 0 0 10px rgba($primary-color, 0.3);
+    font-family: $font-main;
+    color: $text-color;
+    width: 100%;
+    max-width: 500px;
+    animation: fadeInUpCard 0.8s ease-out forwards;
+}
+
+.auth-form-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    text-shadow: 0 0 6px rgba($primary-color, 0.8);
+}
+
+.alert {
+    background: rgba(255, 0, 0, 0.2);
+    border: 1px solid darken($primary-color, 10%);
+    color: lighten($text-color, 10%);
+    padding: 0.8rem 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    border-radius: 4px;
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.close-alert {
+    position: absolute;
+    top: 0.4rem;
+    right: 0.6rem;
+    background: transparent;
+    border: none;
+    color: $text-color;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+
+    label {
+        font-size: 0.95rem;
+        margin-bottom: 0.4rem;
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    input {
+        background: rgba(0, 0, 0, 0.6);
+        border: 1px solid rgba($primary-color, 0.5);
+        border-radius: 4px;
+        padding: 0.8rem 1rem;
+        color: $text-color;
+        font-size: 1rem;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+        &:focus {
+            outline: none;
+            border-color: $primary-color;
+            box-shadow: 0 0 8px rgba($primary-color, 0.8);
+            background: rgba(0, 0, 0, 0.8);
+        }
+    }
+
+    small {
+        margin-top: 0.3rem;
+        font-size: 0.75rem;
+        color: lighten($text-color, 20%);
+    }
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    text-transform: none;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    color: lighten($text-color, 10%);
+    text-transform: none;
+
+    input[type="checkbox"] {
+        width: 1rem;
+        height: 1rem;
+        accent-color: $text-color;
+        flex-shrink: 0;
+        cursor: pointer;
+    }
+
+    .checkbox-label {
+        cursor: pointer;
+        user-select: none;
+        color: inherit;
+        text-transform: none;
+        transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+
+    &.input-focused .checkbox-label {
+        color: $text-color;
+        text-shadow: 0 0 6px rgba($primary-color, 0.8);
+        font-weight: 500;
+    }
+
+    .terms-link {
+        color: $primary-color;
+        text-decoration: none;
+        text-transform: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: lighten($primary-color, 15%);
+            text-shadow: 0 0 6px rgba($primary-color, 0.8);
+        }
+    }
+}
+
+.remember-me.input-focused .checkbox-label,
+.terms.input-focused .checkbox-label {
+    color: $text-color;
+    text-shadow: 0 0 6px rgba($primary-color, 0.8);
+}
+
+.auth-button {
+    background: $primary-color;
+    border: none;
+    padding: 0.9rem;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 12px rgba($primary-color, 0.7);
+
+    &:hover {
+        background: lighten($primary-color, 10%);
+        box-shadow: 0 0 20px rgba($primary-color, 1);
+    }
+}
+
+.auth-links {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+
+    a {
+        color: $primary-color;
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: lighten($primary-color, 15%);
+            text-shadow: 0 0 6px rgba($primary-color, 0.8);
+        }
+    }
+
+    p {
+        margin: 0.4rem 0;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUpCard {
+    0% {
+        opacity: 0;
+        transform: translateY(60px) scale(0.95);
+        filter: blur(4px);
+    }
+
+    60% {
+        opacity: 0.7;
+        transform: translateY(-8px) scale(1.02);
+        filter: blur(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}

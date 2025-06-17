@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
+
+body {
+  font-family: "Sofia Sans", sans-serif;
+  display: flex;
+  flex-direction: column; /* Устанавливаем вертикальное направление для flex-контейнера */
+  background: url('IMG/back.png') no-repeat center center fixed; /* Задний фон с картинкой */
+  background-size: cover; /* Масштабируем фон */
+  margin: 0; /* Убираем отступы по умолчанию */
+  min-height: 100vh; /* Минимальная высота для прокрутки */
+}
+
+.header {
+    background-color: black; /* Устанавливаем черный фон для шапки */
+    height: 220px; /* Фиксированная высота */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Размещаем содержимое по краям */
+    position: relative;
+    width: 98.1%; /* Шапка занимает всю ширину */
+    margin: 0; /* Убираем отступы, чтобы избежать проблем с пространством */
+    padding: 0 20px; /* Отступы по бокам для текста */
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.8); /* Красная неоновая тень */
+}
+
+.header img {
+    max-width: 20%; /* Ограничиваем максимальную ширину изображения */
+    height: auto; /* Сохраняет пропорции изображения */
+    position: absolute; /* Позволяет изображению быть по центру */
+    left: 50%; /* Сдвигаем изображение влево на 50% */
+    transform: translateX(-50%); /* Центрируем изображение по горизонтали */
+}
+
+.header-text {
+  color: white; /* Цвет текста */
+  font-size: 4.5em; /* Размер шрифта */
+  text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.9); /* Красная неоновая тень */
+  position: relative; /* Позволяет тексту находиться поверх изображения */
+  z-index: 1; /* Устанавливаем текст выше изображения */
+  margin-left: 20px; /* Отступ слева для текста */
+}
+
+.back-button {
+  background-color: rgb(255, 0, 0); /* Черный фон кнопки */
+  color: white; /* Белый текст */
+  padding: 10px 20px; /* Отступы внутри кнопки */
+  border: none; /* Убираем рамку */
+  border-radius: 55px; /* Овальная форма кнопки */
+  text-decoration: none; /* Убираем подчеркивание */
+  font-size: 1.5em; /* Размер шрифта */
+  text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.9); /* Красная неоновая тень */
+  transition: background-color 0.3s; /* Плавный переход цвета фона */
+}
+
+.back-button:hover {
+  background-color: rgba(255, 0, 0, 0.7); /* Изменение цвета фона при наведении */
+}
+.main-content {
+  padding: 20px; /* Отступы для основного контента */
+  color: white; /* Цвет текста по умолчанию */
+}
+
+.arena-title {
+  color: red; /* Красный цвет для заголовка */
+  font-size: 3em; /* Размер шрифта для заголовка */
+  text-align: center; /* Центрируем заголовок */
+  margin-bottom: 5px; /* Отступ снизу */
+}
+
+.contact-details {
+  color: rgb(255, 255, 255); /* Черный цвет для контактной информации */
+  font-size: 1.5em; /* Размер шрифта для контактной информации */
+  text-align: center; /* Центрируем текст */
+  margin: 3px 0; /* Отступы между строками */
+}
+
+.divider {
+  height: 2px; /* Высота разделителя */
+  background-color: red; /* Красный цвет разделителя */
+  margin: 10px auto; /* Отступы сверху и снизу, центрируем по горизонтали */
+  width: 30%; /* Установите желаемую ширину для разделителя (например, 50%) */
+}
+
+.footer {
+  background-color: black; /* Цвет фона подвала */
+  color: white; /* Цвет текста */
+  padding: 20px; /* Отступы внутри подвала */
+  display: flex; /* Используем flexbox для выравнивания */
+  align-items: center; /* Центрируем элементы по вертикали */
+  flex-direction: column; /* Устанавливаем вертикальное направление для элементов */
+}
+
+.footer-logo {
+  width: 100px; /* Ширина логотипа */
+  margin-bottom: 10px; /* Отступ снизу от логотипа */
+}
+
+.footer-text {
+  margin-bottom: 20px; /* Отступ снизу от текста */
+  text-align: center; /* Центрируем текст */
+}
+
+.footer-links {
+  display: flex; /* Используем flexbox для фотографий */
+  gap: 10px; /* Отступ между фотографиями */
+}
+
+.footer-photo {
+  width: 45px; /* Ширина фотографий */
+  height: 45px; /* Высота фотографий для одинакового размера */
+  object-fit: cover; /* Обеспечивает сохранение пропорций и заполнение области */
+}

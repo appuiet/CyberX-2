@@ -1,0 +1,491 @@
+$primary-color: #e30a0e;
+$bg-dark: #151414;
+$text-color: #fff;
+$card-bg: rgba(20, 20, 20, 0.95);
+$transition-fast: 0.3s ease;
+$border-radius: 8px;
+$shadow-neon: 0 0 16px rgba($primary-color, .8);
+$break-md: 768px;
+
+.profile-container {
+  display: flex;
+  gap: 2rem;
+  min-height: 65.4vh;
+  padding: 3rem 1rem;
+  background: $bg-dark;
+  color: $text-color;
+  font-family: "Orbitron", sans-serif;
+
+  @media (max-width: $break-md) {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+}
+
+.profile-sidebar {
+  width: 260px;
+  background: $card-bg;
+  border: 2px solid $primary-color;
+  border-radius: $border-radius;
+  box-shadow: $shadow-neon, inset 0 0 12px rgba($primary-color, 0.4);
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+
+  @media (max-width: $break-md) {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+}
+
+.profile-avatar {
+  text-align: center;
+  margin-bottom: 2rem;
+
+  img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid $primary-color;
+    box-shadow: $shadow-neon;
+  }
+
+  h3 {
+    margin: 0.8rem 0 0.2rem;
+    font-size: 1.3rem;
+    text-shadow: $shadow-neon;
+  }
+
+  p {
+    font-size: 0.85rem;
+    color: lighten($text-color, 30%);
+  }
+}
+
+.profile-menu {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+
+  li {
+    margin-bottom: 0.5rem;
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.8rem 1rem;
+      color: $text-color;
+      text-decoration: none;
+      font-size: 0.9rem;
+      border-left: 4px solid transparent;
+      transition: color $transition-fast, background $transition-fast, border-color $transition-fast;
+
+      i {
+        width: 18px;
+        text-align: center;
+      }
+    }
+
+    &.active a {
+      color: $primary-color;
+      background: rgba($primary-color, 0.1);
+      border-left-color: $primary-color;
+      box-shadow: inset 4px 0 6px rgba($primary-color, 0.4);
+    }
+
+    &:hover a {
+      background: rgba($primary-color, 0.05);
+    }
+  }
+
+  .cart-count {
+    background: $primary-color;
+    color: #000;
+    font-size: 0.75rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 50%;
+    margin-left: auto;
+  }
+}
+
+.profile-content {
+  flex: 1;
+  background: $card-bg;
+  border: 2px solid $primary-color;
+  border-radius: $border-radius;
+  box-shadow: $shadow-neon, inset 0 0 12px rgba($primary-color, 0.4);
+  padding: 2rem 2.5rem;
+
+  @media (max-width: $break-md) {
+    padding: 1.5rem;
+  }
+}
+
+// Секция профиля: отступы и фон
+.profile-section {
+  margin-bottom: 3rem;
+
+  h2 {
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem;
+    text-shadow: $shadow-neon;
+  }
+
+  // Стили для форм настроек
+  .settings-form {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1.5rem;
+    border: 1px solid rgba($primary-color, 0.4);
+    border-radius: $border-radius;
+    box-shadow: inset 0 0 8px rgba($primary-color, 0.3);
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem;
+
+      label {
+        font-size: 0.9rem;
+        color: lighten($text-color, 30%);
+        margin-bottom: 0.4rem;
+      }
+
+      input {
+        padding: 0.6rem 1rem;
+        font-size: 1rem;
+        border: 2px solid rgba($text-color, 0.2);
+        border-radius: $border-radius;
+        background: rgba(0, 0, 0, 0.3);
+        color: $text-color;
+        transition: border-color $transition-fast, box-shadow $transition-fast;
+
+        &:focus {
+          outline: none;
+          border-color: $primary-color;
+          box-shadow: 0 0 8px rgba($primary-color, 0.6);
+        }
+      }
+    }
+  }
+}
+
+.profile-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem 2rem;
+
+  @media (max-width: $break-md) {
+    grid-template-columns: 1fr;
+  }
+
+  .info-group {
+    label {
+      font-size: 0.85rem;
+      color: lighten($text-color, 30%);
+      display: block;
+    }
+
+    p {
+      margin: 0.3rem 0 0;
+      font-size: 1rem;
+    }
+  }
+}
+
+.btn {
+  background: $primary-color;
+  text-decoration: none;
+  color: #000;
+  padding: 0.8rem 1.6rem;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: $border-radius;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2), 0 0 12px rgba($primary-color, 0.7);
+  transition: background $transition-fast, box-shadow $transition-fast;
+
+  &:hover {
+    background: lighten($primary-color, 10%);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba($primary-color, 1);
+  }
+}
+
+// Полный каркас стилей корзины
+
+// Переменные цветовой схемы
+$primary-color: #e30a0e;
+$background-color: #151414;
+$text-color: #fff;
+$font-main: "Orbitron", sans-serif;
+$transition-fast: 0.3s ease;
+$border-radius: 8px;
+
+// Анимации
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUpCard {
+  0% {
+    opacity: 0;
+    transform: translateY(60px) scale(0.95);
+    filter: blur(4px);
+  }
+
+  60% {
+    opacity: 0.7;
+    transform: translateY(-8px) scale(1.02);
+    filter: blur(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes imageZoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(1.2) translateY(20px);
+  }
+
+  60% {
+    opacity: 0.8;
+    transform: scale(1.05) translateY(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+// Базовые настройки страницы корзины
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1rem;
+  background: $background-color;
+  color: $text-color;
+  font-family: $font-main;
+  animation: fadeInUp 0.8s ease-out forwards;
+
+  h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    border-bottom: 3px solid $primary-color;
+    padding-bottom: 0.5rem;
+  }
+
+  .back-button {
+    text-decoration: none;
+    color: $text-color;
+    border: 2px solid $primary-color;
+    padding: 0.6rem 1.2rem;
+    border-radius: $border-radius;
+    transition: background $transition-fast, color $transition-fast;
+
+    &:hover {
+      background: $primary-color;
+      color: #000;
+    }
+  }
+}
+
+.cart-container {
+  flex: 1;
+  background: $background-color;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-family: $font-main;
+  color: $text-color;
+}
+
+.empty-cart {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba($primary-color, 0.5);
+  border-radius: $border-radius;
+  animation: fadeInUp 0.8s ease-out forwards;
+
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .button {
+    text-decoration: none;
+    color: $text-color;
+    background: $primary-color;
+    padding: 0.8rem 2rem;
+    border-radius: $border-radius;
+    transition: background $transition-fast;
+
+    &:hover {
+      background: lighten($primary-color, 10%);
+    }
+  }
+}
+
+.cart-items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+
+  .cart-item-card {
+    background: linear-gradient(145deg, rgba(20, 20, 20, 0.9), rgba(40, 0, 0, 0.7));
+    border: 1px solid rgba($primary-color, 0.5);
+    border-radius: $border-radius;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    animation: fadeInUpCard 1s ease-out forwards;
+
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 20px rgba($primary-color, 0.8);
+      border-color: $primary-color;
+    }
+
+    .cart-item-image-container {
+      overflow: hidden;
+
+      .cart-item-image {
+        width: 100%;
+        height: auto;
+        display: block;
+        animation: imageZoomIn 1s ease-out forwards;
+      }
+    }
+
+    .cart-item-details {
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      .cart-item-name {
+        font-size: 1.2rem;
+        margin: 0;
+        color: $primary-color;
+      }
+
+      .cart-item-price {
+        font-size: 1rem;
+        font-weight: 600;
+      }
+
+      .cart-item-controls {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .quantity-control {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+
+          .quantity-btn {
+            background: rgba(0, 0, 0, 0.7);
+            border: 1px solid rgba($primary-color, 0.5);
+            border-radius: $border-radius;
+            padding: 0.4rem;
+            cursor: pointer;
+            transition: background $transition-fast;
+
+            &:hover {
+              background: rgba($primary-color, 0.2);
+            }
+
+            i {
+              color: $text-color;
+            }
+          }
+
+          .quantity-value {
+            min-width: 2rem;
+            text-align: center;
+          }
+        }
+
+        .cart-item-subtotal {
+          font-size: 1rem;
+          font-weight: 700;
+        }
+
+        .remove-button {
+          align-self: flex-start;
+          background: transparent;
+          border: 1px solid $primary-color;
+          color: $text-color;
+          padding: 0.5rem 1rem;
+          border-radius: $border-radius;
+          transition: background $transition-fast;
+
+          &:hover {
+            background: $primary-color;
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}
+
+.cart-summary {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1.5rem;
+  border: 1px solid rgba($primary-color, 0.5);
+  border-radius: $border-radius;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: fadeInUp 1s ease-out forwards;
+
+  .cart-total {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .cart-actions {
+    display: flex;
+    gap: 1rem;
+
+    .clear-button,
+    .checkout-button,
+    a.checkout-button {
+      background: transparent;
+      border: 1px solid $primary-color;
+      color: $text-color;
+      padding: 0.6rem 1.2rem;
+      border-radius: $border-radius;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: background $transition-fast;
+
+      &:hover {
+        background: $primary-color;
+        color: #000;
+      }
+    }
+  }
+}

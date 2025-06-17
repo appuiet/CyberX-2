@@ -1,0 +1,30 @@
+# Включение модуля rewrite
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Правила для правильной обработки путей к CSS, JavaScript, изображениям
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} \.(css|js|jpg|jpeg|png|gif|ico)$
+    RewriteRule ^(.*)$ CyberX/$1 [L]
+
+    # Другие настройки сервера
+    # Включаем перезапись заголовков для предотвращения кэширования при разработке
+    <IfModule mod_headers.c>
+        Header set Cache-Control "no-cache, no-store, must-revalidate"
+        Header set Pragma "no-cache"
+        Header set Expires 0
+    </IfModule>
+</IfModule>
+
+# Настройка кодировки по умолчанию
+AddDefaultCharset UTF-8
+
+# Включение PHP-обработки для .php файлов
+<FilesMatch "\.php$">
+    SetHandler application/x-httpd-php
+</FilesMatch>
+
+# Настройка индексных файлов
+DirectoryIndex index.php index.html 

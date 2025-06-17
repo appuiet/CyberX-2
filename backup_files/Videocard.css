@@ -1,0 +1,164 @@
+body {
+    font-family: "Sofia Sans", sans-serif;
+    display: flex;
+    flex-direction: column; /* Устанавливаем вертикальное направление для flex-контейнера */
+    background: url('IMG/back.png') no-repeat center center fixed; /* Задний фон с картинкой */
+    background-size: cover; /* Масштабируем фон */
+    margin: 0; /* Убираем отступы по умолчанию */
+    min-height: 100vh; /* Минимальная высота для прокрутки */
+  }
+  
+  .header {
+      background-color: black; /* Устанавливаем черный фон для шапки */
+      height: 220px; /* Фиксированная высота */
+      display: flex;
+      align-items: center;
+      justify-content: space-between; /* Размещаем содержимое по краям */
+      position: relative;
+      width: 98.1%; /* Шапка занимает всю ширину */
+      margin: 0; /* Убираем отступы, чтобы избежать проблем с пространством */
+      padding: 0 20px; /* Отступы по бокам для текста */
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.8); /* Красная неоновая тень */
+  }
+  
+  .header img {
+      max-width: 20%; /* Ограничиваем максимальную ширину изображения */
+      height: auto; /* Сохраняет пропорции изображения */
+      position: absolute; /* Позволяет изображению быть по центру */
+      left: 50%; /* Сдвигаем изображение влево на 50% */
+      transform: translateX(-50%); /* Центрируем изображение по горизонтали */
+  }
+  
+  .header-text {
+    color: white; /* Цвет текста */
+    font-size: 4.5em; /* Размер шрифта */
+    text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.9); /* Красная неоновая тень */
+    position: relative; /* Позволяет тексту находиться поверх изображения */
+    z-index: 1; /* Устанавливаем текст выше изображения */
+    margin-left: 20px; /* Отступ слева для текста */
+  }
+  
+  .back-button {
+    background-color: rgb(255, 0, 0); /* Черный фон кнопки */
+    color: white; /* Белый текст */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    border: none; /* Убираем рамку */
+    border-radius: 55px; /* Овальная форма кнопки */
+    text-decoration: none; /* Убираем подчеркивание */
+    font-size: 1.5em; /* Размер шрифта */
+    text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.9); /* Красная неоновая тень */
+    transition: background-color 0.3s; /* Плавный переход цвета фона */
+  }
+  
+  .back-button:hover {
+    background-color: rgba(255, 0, 0, 0.7); /* Изменение цвета фона при наведении */
+  }
+  .section__intro {
+    padding-top: 10px;
+ }
+ 
+ .intro-h2 {
+    color: rgb(238, 18, 18);
+    font-family: Yellowtail;
+    font-size: 36px;
+    font-weight: 400;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+ }
+ 
+ .intro-p {
+    color: rgb(39, 76, 91);
+    font-family: Roboto;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 59px;
+    text-align: center;
+ }
+ 
+ .intro-colum {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+ }
+ 
+ .intro-df {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+ }
+ 
+ .intro-block {
+  border-radius: 30px; /* Rounded corners */
+  background: rgba(252, 250, 250, 0.8); /* Light background with transparency */
+  width: 335px; /* Width of the block */
+  height: 483px; /* Height of the block */
+  border: 1px solid black; /* Border color */
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.9), 0 0 10px rgba(255, 0, 0, 0.9); /* Red neon shadow */
+}
+ .intro-block button {
+    border-radius: 8px;
+ 
+    background: rgb(177, 28, 28);
+    width: 96px;
+    height: 31px;
+    color: rgb(255, 255, 255);
+    font-family: Open Sans;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    border: none;
+    margin: 29px 30px;
+ }
+ 
+ .intro-block img {
+    width:320px;
+    height:170px;
+    image-rendering: pixelated;
+ }
+ 
+ .intro-block h2 {
+    color: rgb(0, 0, 0);
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 2px 31px;
+ }
+ 
+ .intro-block-df-t {
+  display: flex;
+  padding-top: 8px;
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  gap: 41px; /* Space between items */
+}
+
+ 
+ .left3 {
+    display: flex;
+    align-items: center;
+ }
+ 
+ .left3 h2 {
+    color: rgb(0, 0, 0);
+    font-family: Open Sans;
+    font-size: 15px;
+    font-weight: 600;
+ }
+ 
+ .left3 h3 {
+    color: rgb(255, 7, 7);
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 700;
+ }
+ 
+ .right3 img {
+    width: 84px;
+    height: 18.38px;
+ }
+ 

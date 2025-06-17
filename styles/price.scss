@@ -1,0 +1,194 @@
+$bg-dark: #0b0b0b;
+$bg-gradient: linear-gradient(135deg, #0b0b0b 0%, #1a0e17 100%);
+$text-base: #c2c2c2;
+$accent: #e30a0e;
+$glow: rgba(227, 10, 14, 0.6);
+$font-sans: 'Share Tech Mono', monospace;
+$breakpoint-md: 768px;
+
+.price-section {
+    background: $bg-gradient;
+    color: $text-base;
+    height: 56.6vh;
+    font-family: $font-sans;
+    padding: 80px 20px;
+    overflow: hidden;
+
+    &__container {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        position: relative;
+        font-size: 3rem;
+        text-transform: uppercase;
+        color: $accent;
+        text-align: center;
+        margin-bottom: 60px;
+        letter-spacing: 4px;
+        opacity: 0;
+        animation: fadeInUp 2s ease-out forwards;
+        animation-delay: 0.2s;
+        text-shadow:
+            0 0 5px $glow,
+            0 0 10px $glow,
+            0 0 20px $glow;
+    }
+
+    &__tables {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 50px;
+        margin-top: 40px;
+
+        >.price-table {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s ease-out forwards;
+
+            &:nth-child(1) {
+                animation-delay: 0.4s;
+            }
+
+            &:nth-child(2) {
+                animation-delay: 0.6s;
+            }
+
+            &:nth-child(3) {
+                animation-delay: 0.8s;
+            }
+        }
+    }
+}
+
+.price-table {
+    background: rgba(20, 20, 20, 0.9);
+    border: 1px solid $accent;
+    border-radius: 8px;
+    box-shadow: 0 0 25px $glow;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+        box-shadow: 0 0 45px $accent;
+        transform: translateY(-5px);
+    }
+
+    &__heading {
+        background: $accent;
+        color: #000;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        padding: 15px;
+        text-align: center;
+        letter-spacing: 2px;
+        box-shadow: 0 0 10px $glow;
+    }
+
+    &__table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    &__head {
+        th {
+            background: rgba(227, 10, 14, 0.2);
+            color: $text-base;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            padding: 12px;
+            border-bottom: 1px solid $accent;
+            text-align: center;
+
+            &--group {
+                background: rgba(227, 10, 14, 0.3);
+            }
+
+            &--label {
+                background: rgba(227, 10, 14, 0.4);
+                width: 80px;
+            }
+        }
+    }
+
+    &__body {
+        tr {
+            &:nth-child(even) {
+                background: rgba(255, 255, 255, 0.03);
+            }
+
+            &:hover {
+                background: rgba(227, 10, 14, 0.1);
+                transform: scale(1.02);
+            }
+
+            transition: background 0.2s ease,
+            transform 0.2s ease;
+        }
+    }
+
+    &__cell {
+        padding: 14px;
+        color: $text-base;
+        font-size: 1rem;
+        text-align: center;
+        border-bottom: 1px solid rgba(227, 10, 14, 0.2);
+
+        &--label {
+            text-align: left;
+            font-weight: bold;
+            padding-left: 20px;
+        }
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: $breakpoint-md) {
+    .price-section {
+        padding: 60px 10px;
+
+        &__title {
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+        }
+
+        &__tables {
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+    }
+
+    .price-table {
+        &__heading {
+            font-size: 1rem;
+            padding: 12px;
+        }
+
+        &__head th {
+            font-size: 0.8rem;
+            padding: 8px;
+        }
+
+        &__cell {
+            padding: 10px;
+            font-size: 0.9rem;
+
+            &--label {
+                padding-left: 12px;
+            }
+        }
+    }
+}

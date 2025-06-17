@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
+
+body {
+  font-family: "Sofia Sans", sans-serif;
+  display: flex;
+  flex-direction: column; /* Устанавливаем вертикальное направление для flex-контейнера */
+  background: #f0f0f0; /* Цвет фона для body */
+  margin: 0; /* Убираем отступы по умолчанию */
+  min-height: 100vh; /* Минимальная высота для прокрутки */
+}
+
+.header {
+    background-color: black; /* Устанавливаем черный фон для шапки */
+    height: 220px; /* Фиксированная высота */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Размещаем содержимое по краям */
+    position: relative;
+    width: 98.1%; /* Шапка занимает всю ширину */
+    margin: 0; /* Убираем отступы, чтобы избежать проблем с пространством */
+    padding: 0 20px; /* Отступы по бокам для текста */
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.8); /* Красная неоновая тень */
+}
+
+.header img {
+    max-width: 20%; /* Ограничиваем максимальную ширину изображения */
+    height: auto; /* Сохраняет пропорции изображения */
+    position: absolute; /* Позволяет изображению быть по центру */
+    left: 50%; /* Сдвигаем изображение влево на 50% */
+    transform: translateX(-50%); /* Центрируем изображение по горизонтали */
+}
+
+.header-text {
+  color: white; /* Цвет текста */
+  font-size: 4.5em; /* Размер шрифта */
+  text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.9); /* Красная неоновая тень */
+  position: relative; /* Позволяет тексту находиться поверх изображения */
+  z-index: 1; /* Устанавливаем текст выше изображения */
+  margin-left: 20px; /* Отступ слева для текста */
+}
+
+.back-button {
+  background-color: rgb(255, 0, 0); /* Черный фон кнопки */
+  color: white; /* Белый текст */
+  padding: 10px 20px; /* Отступы внутри кнопки */
+  border: none; /* Убираем рамку */
+  border-radius: 55px; /* Овальная форма кнопки */
+  text-decoration: none; /* Убираем подчеркивание */
+  font-size: 1.5em; /* Размер шрифта */
+  text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.9); /* Красная неоновая тень */
+  transition: background-color 0.3s; /* Плавный переход цвета фона */
+}
+
+.back-button:hover {
+  background-color: rgba(255, 0, 0, 0.7); /* Изменение цвета фона при наведении */
+}
+.main-content {
+    flex: 1;
+    background-image: url('IMG/back.png');
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    overflow-y: auto;
+    min-height: 1000px;
+}
+
+.price-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    color: rgba(218, 6, 6, 0.829);
+    font-size: 1.2em;
+    max-width: 100%;
+}
+
+table {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    background-color: transparent;
+    table-layout: fixed;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border: none;
+    font-size: 1.2em;
+}
+
+th {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+}
+
+th:nth-child(1),
+th:nth-child(2),
+th:nth-child(3),
+th:nth-child(4),
+th:nth-child(5),
+th:nth-child(6),
+th:nth-child(7) {
+    background-color: rgba(255, 245, 245, 0.4);
+}
+
+td {
+    color: rgb(255, 255, 255);
+}
+
+tr {
+    border-bottom: 2px solid rgba(238, 28, 28, 0.9);
+}
+
+tr:hover {
+    background-color: rgba(243, 0, 0, 0.2);
+}
+
+.price {
+    background-color: rgba(255, 255, 255, 0);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    color: rgba(218, 6, 6, 0.829);
+    font-size: 1.2em;
+    max-width: 1950px;
+}
+
+@media (max-width: 768px) {
+    .price-container {
+        font-size: 1em;
+    }
+
+    th, td {
+        font-size: 1em;
+    }
+}
+.footer {
+    background-color: black; /* Цвет фона подвала */
+    color: white; /* Цвет текста */
+    padding: 20px; /* Отступы внутри подвала */
+    display: flex; /* Используем flexbox для выравнивания */
+    align-items: center; /* Центрируем элементы по вертикали */
+    flex-direction: column; /* Устанавливаем вертикальное направление для элементов */
+  }
+  
+  .footer-logo {
+    width: 100px; /* Ширина логотипа */
+    margin-bottom: 10px; /* Отступ снизу от логотипа */
+  }
+  
+  .footer-text {
+    margin-bottom: 20px; /* Отступ снизу от текста */
+    text-align: center; /* Центрируем текст */
+  }
+  
+  .footer-links {
+    display: flex; /* Используем flexbox для фотографий */
+    gap: 10px; /* Отступ между фотографиями */
+  }
+  
+  .footer-photo {
+    width: 45px; /* Ширина фотографий */
+    height: 45px; /* Высота фотографий для одинакового размера */
+    object-fit: cover; /* Обеспечивает сохранение пропорций и заполнение области */
+  }
+
+
+
+
+

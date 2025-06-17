@@ -1,0 +1,298 @@
+$primary-color: #e30a0e;
+$bg-dark: #151414;
+$text-color: #fff;
+$card-bg: rgba(20, 20, 20, 0.95);
+$border-radius: 6px;
+$shadow-neon: 0 0 14px rgba($primary-color, .8);
+$break-md: 768px;
+$font-main: "Orbitron", sans-serif;
+$transition-fast: 0.3s ease;
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.shop-container {
+  padding: 3rem 1rem;
+  background: $bg-dark;
+  color: $text-color;
+  font-family: $font-main;
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.shop-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out 0.1s forwards;
+
+  .welcome-text {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-shadow: $shadow-neon;
+  }
+
+  .shop-description {
+    margin-top: 0.6rem;
+    font-size: 1rem;
+    color: lighten($text-color, 30%);
+  }
+}
+
+.categories-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out 0.2s forwards;
+}
+
+@for $i from 1 through 10 {
+  .category-card:nth-child(#{$i}) {
+    opacity: 0;
+    animation: fadeInUp 0.6s ease-out (0.2s + $i*0.1s) forwards;
+  }
+}
+
+.category-card {
+  background: $card-bg;
+  border: 2px solid rgba($primary-color, 0.4);
+  border-radius: $border-radius;
+  overflow: hidden;
+  position: relative;
+  transition: transform $transition-fast, box-shadow $transition-fast;
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: $shadow-neon;
+  }
+
+  .category-image {
+    position: relative;
+    height: 180px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .category-badge {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: $primary-color;
+      color: #000;
+      padding: 0.3rem 0.6rem;
+      font-size: 0.75rem;
+      border-radius: $border-radius;
+      box-shadow: 0 0 8px rgba($primary-color, 0.8);
+    }
+  }
+
+  &:hover .category-image img {
+    transform: scale(1.1);
+  }
+
+  .category-info {
+    padding: 1rem 1.2rem;
+
+    h3 {
+      margin: 0 0 0.4rem;
+      font-size: 1.1rem;
+      color: $primary-color;
+    }
+
+    p {
+      font-size: 0.85rem;
+      color: lighten($text-color, 30%);
+      height: 52px;
+      overflow: hidden;
+    }
+
+    .view-category {
+      display: inline-block;
+      margin-top: 0.8rem;
+      font-size: 0.8rem;
+      color: $primary-color;
+      text-transform: uppercase;
+      transition: color $transition-fast;
+
+      &:hover {
+        color: lighten($primary-color, 10%);
+      }
+    }
+  }
+}
+
+.featured-products h2 {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-shadow: $shadow-neon;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out 0.3s forwards;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out 0.4s forwards;
+}
+
+@for $j from 1 through 10 {
+  .product-card:nth-child(#{$j}) {
+    opacity: 0;
+    animation: fadeInUp 0.6s ease-out (0.4s + $j*0.1s) forwards;
+  }
+}
+
+.product-card {
+  background: $card-bg;
+  border: 2px solid rgba($primary-color, 0.4);
+  border-radius: $border-radius;
+  box-shadow: inset 0 0 8px rgba($primary-color, 0.3);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform $transition-fast, box-shadow $transition-fast;
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: $shadow-neon;
+  }
+
+  .product-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .product-badge {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: $primary-color;
+      color: #000;
+      padding: 0.25rem 0.6rem;
+      font-size: 0.8rem;
+      border-radius: $border-radius;
+      box-shadow: 0 0 8px rgba($primary-color, 0.8);
+    }
+  }
+
+  &:hover .product-image img {
+    transform: scale(1.1);
+  }
+
+  .product-info {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.2rem;
+    flex: 1;
+
+    h3 {
+      font-size: 1.05rem;
+      margin: 0 0 0.4rem;
+    }
+
+    .product-description {
+      font-size: 0.8rem;
+      color: lighten($text-color, 30%);
+      flex: 1;
+      margin-bottom: 0.6rem;
+    }
+
+    .product-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      font-size: 0.9rem;
+
+      .product-price-container {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+
+        .old-price {
+          text-decoration: line-through;
+          color: lighten($text-color, 40%);
+          font-size: 0.8rem;
+        }
+
+        .product-price {
+          color: $primary-color;
+          font-weight: 700;
+        }
+      }
+
+      .stock-status {
+        font-size: 0.75rem;
+
+        &.in-stock {
+          color: lighten($primary-color, 20%);
+        }
+
+        &.out-of-stock {
+          color: #ff5252;
+        }
+      }
+    }
+
+    .add-to-cart-btn {
+      margin-top: 1rem;
+      background: $primary-color;
+      color: #000;
+      border: none;
+      padding: 0.6rem 1rem;
+      width: 100%;
+      border-radius: $border-radius;
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background $transition-fast, box-shadow $transition-fast;
+      box-shadow: 0 0 10px rgba($primary-color, 0.7);
+
+      &:hover {
+        background: lighten($primary-color, 8%);
+        box-shadow: 0 0 18px rgba($primary-color, 0.9);
+      }
+
+      &.added {
+        background: lighten($primary-color, 20%);
+        cursor: default;
+      }
+
+      &:disabled {
+        opacity: 0.6;
+        cursor: default;
+      }
+    }
+  }
+}
+
+.no-categories {
+  text-align: center;
+  color: lighten($text-color, 40%);
+  font-size: 1rem;
+}

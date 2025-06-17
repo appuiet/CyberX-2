@@ -1,0 +1,2910 @@
+=== Запрос к cart_ajax.php: 2025-06-08 01:01:03 ===
+POST данные: Array
+(
+    [action] => check_cart
+    [product_ids] => ["1","2","3"]
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: 
+Действие: check_cart
+Проверка товаров в корзине
+Результаты проверки: {"1":false,"2":false,"3":false}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:01:04 ===
+POST данные: Array
+(
+    [action] => add
+    [product_id] => 1
+    [price] => 2389.90
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: 
+Действие: add
+Параметры: product_id=1, price=2389.9, quantity=1
+Товар найден: Array
+(
+    [id] => 1
+    [name] => Gigabyte GeForce RTX 5070 Gaming OC 12G
+    [image] => one.png
+)
+
+Результат add_to_cart: успешно
+Успешный ответ: {"success":true,"message":"\u0422\u043e\u0432\u0430\u0440 \u0434\u043e\u0431\u0430\u0432\u043b\u0435\u043d \u0432 \u043a\u043e\u0440\u0437\u0438\u043d\u0443","product_name":"Gigabyte GeForce RTX 5070 Gaming OC 12G","product_image":"one.png","cart_count":1,"cart_total":"2 389.90 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:01:04 ===
+POST данные: Array
+(
+    [action] => add
+    [product_id] => 1
+    [price] => 2389.90
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: 
+Действие: add
+Параметры: product_id=1, price=2389.9, quantity=1
+Товар найден: Array
+(
+    [id] => 1
+    [name] => Gigabyte GeForce RTX 5070 Gaming OC 12G
+    [image] => one.png
+)
+
+Результат add_to_cart: успешно
+Успешный ответ: {"success":true,"message":"\u0422\u043e\u0432\u0430\u0440 \u0434\u043e\u0431\u0430\u0432\u043b\u0435\u043d \u0432 \u043a\u043e\u0440\u0437\u0438\u043d\u0443","product_name":"Gigabyte GeForce RTX 5070 Gaming OC 12G","product_image":"one.png","cart_count":1,"cart_total":"2 389.90 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:01:31 ===
+POST данные: Array
+(
+    [action] => add
+    [product_id] => 2
+    [price] => 12237.93
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: 
+Действие: add
+Параметры: product_id=2, price=12237.93, quantity=1
+Товар найден: Array
+(
+    [id] => 2
+    [name] => Palit GeForce RTX 5090 GameRock
+    [image] => two.png
+)
+
+Результат add_to_cart: успешно
+=== Запрос к cart_ajax.php: 2025-06-08 01:01:31 ===
+POST данные: Array
+(
+    [action] => add
+    [product_id] => 2
+    [price] => 12237.93
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: 
+Действие: add
+Успешный ответ: {"success":true,"message":"\u0422\u043e\u0432\u0430\u0440 \u0434\u043e\u0431\u0430\u0432\u043b\u0435\u043d \u0432 \u043a\u043e\u0440\u0437\u0438\u043d\u0443","product_name":"Palit GeForce RTX 5090 GameRock","product_image":"two.png","cart_count":1,"cart_total":"12 237.93 BYN"}
+Параметры: product_id=2, price=12237.93, quantity=1
+=== Конец запроса ===
+
+Товар найден: Array
+(
+    [id] => 2
+    [name] => Palit GeForce RTX 5090 GameRock
+    [image] => two.png
+)
+
+Результат add_to_cart: успешно
+Успешный ответ: {"success":true,"message":"\u0422\u043e\u0432\u0430\u0440 \u0434\u043e\u0431\u0430\u0432\u043b\u0435\u043d \u0432 \u043a\u043e\u0440\u0437\u0438\u043d\u0443","product_name":"Palit GeForce RTX 5090 GameRock","product_image":"two.png","cart_count":1,"cart_total":"12 237.93 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:02:31 ===
+POST данные: Array
+(
+    [action] => check_cart
+    [product_ids] => ["1","2","3","4","5","6","7","8","15","16","17","18","19","20","21","22","29","30","31","32","33","34","35","36","43","44","45","46","47","48","49","50","57","58","59","60","61","62","63","64"]
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: check_cart
+Проверка товаров в корзине
+Результаты проверки: {"1":false,"2":false,"3":false,"4":false,"5":false,"6":false,"7":false,"8":false,"15":false,"16":false,"17":false,"18":false,"19":false,"20":false,"21":false,"22":false,"29":false,"30":false,"31":false,"32":false,"33":false,"34":false,"35":false,"36":false,"43":false,"44":false,"45":false,"46":false,"47":false,"48":false,"49":false,"50":false,"57":false,"58":false,"59":false,"60":false,"61":false,"62":false,"63":false,"64":false}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:02:35 ===
+POST данные: Array
+(
+    [action] => add
+    [product_id] => 1
+    [price] => 2389.90
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: add
+Параметры: product_id=1, price=2389.9, quantity=1
+Товар найден: Array
+(
+    [id] => 1
+    [name] => Gigabyte GeForce RTX 5070 Gaming OC 12G
+    [image] => one.png
+)
+
+Результат add_to_cart: успешно
+Успешный ответ: {"success":true,"message":"\u0422\u043e\u0432\u0430\u0440 \u0434\u043e\u0431\u0430\u0432\u043b\u0435\u043d \u0432 \u043a\u043e\u0440\u0437\u0438\u043d\u0443","product_name":"Gigabyte GeForce RTX 5070 Gaming OC 12G","product_image":"one.png","cart_count":1,"cart_total":"2 389.90 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:02:35 ===
+POST данные: Array
+(
+    [action] => add
+    [product_id] => 1
+    [price] => 2389.90
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: add
+Параметры: product_id=1, price=2389.9, quantity=1
+Товар найден: Array
+(
+    [id] => 1
+    [name] => Gigabyte GeForce RTX 5070 Gaming OC 12G
+    [image] => one.png
+)
+
+Результат add_to_cart: успешно
+Успешный ответ: {"success":true,"message":"\u0422\u043e\u0432\u0430\u0440 \u0434\u043e\u0431\u0430\u0432\u043b\u0435\u043d \u0432 \u043a\u043e\u0440\u0437\u0438\u043d\u0443","product_name":"Gigabyte GeForce RTX 5070 Gaming OC 12G","product_image":"one.png","cart_count":2,"cart_total":"4 779.80 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:02:41 ===
+POST данные: Array
+(
+    [action] => add
+    [product_id] => 2
+    [price] => 12237.93
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: add
+Параметры: product_id=2, price=12237.93, quantity=1
+Товар найден: Array
+(
+    [id] => 2
+    [name] => Palit GeForce RTX 5090 GameRock
+    [image] => two.png
+)
+
+Результат add_to_cart: успешно
+Успешный ответ: {"success":true,"message":"\u0422\u043e\u0432\u0430\u0440 \u0434\u043e\u0431\u0430\u0432\u043b\u0435\u043d \u0432 \u043a\u043e\u0440\u0437\u0438\u043d\u0443","product_name":"Palit GeForce RTX 5090 GameRock","product_image":"two.png","cart_count":3,"cart_total":"17 017.73 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:02:41 ===
+POST данные: Array
+(
+    [action] => add
+    [product_id] => 2
+    [price] => 12237.93
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: add
+Параметры: product_id=2, price=12237.93, quantity=1
+Товар найден: Array
+(
+    [id] => 2
+    [name] => Palit GeForce RTX 5090 GameRock
+    [image] => two.png
+)
+
+Результат add_to_cart: успешно
+Успешный ответ: {"success":true,"message":"\u0422\u043e\u0432\u0430\u0440 \u0434\u043e\u0431\u0430\u0432\u043b\u0435\u043d \u0432 \u043a\u043e\u0440\u0437\u0438\u043d\u0443","product_name":"Palit GeForce RTX 5090 GameRock","product_image":"two.png","cart_count":4,"cart_total":"29 255.66 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:02:42 ===
+POST данные: Array
+(
+    [action] => add
+    [product_id] => 3
+    [price] => 1154.60
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: add
+Параметры: product_id=3, price=1154.6, quantity=1
+Товар найден: Array
+(
+    [id] => 3
+    [name] => Gigabyte GeForce RTX 3060 Gaming OC 12GB GDDR6
+    [image] => p.png
+)
+
+Результат add_to_cart: успешно
+Успешный ответ: {"success":true,"message":"\u0422\u043e\u0432\u0430\u0440 \u0434\u043e\u0431\u0430\u0432\u043b\u0435\u043d \u0432 \u043a\u043e\u0440\u0437\u0438\u043d\u0443","product_name":"Gigabyte GeForce RTX 3060 Gaming OC 12GB GDDR6","product_image":"p.png","cart_count":5,"cart_total":"30 410.26 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:02:42 ===
+POST данные: Array
+(
+    [action] => add
+    [product_id] => 3
+    [price] => 1154.60
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: add
+Параметры: product_id=3, price=1154.6, quantity=1
+Товар найден: Array
+(
+    [id] => 3
+    [name] => Gigabyte GeForce RTX 3060 Gaming OC 12GB GDDR6
+    [image] => p.png
+)
+
+Результат add_to_cart: успешно
+Успешный ответ: {"success":true,"message":"\u0422\u043e\u0432\u0430\u0440 \u0434\u043e\u0431\u0430\u0432\u043b\u0435\u043d \u0432 \u043a\u043e\u0440\u0437\u0438\u043d\u0443","product_name":"Gigabyte GeForce RTX 3060 Gaming OC 12GB GDDR6","product_image":"p.png","cart_count":6,"cart_total":"31 564.86 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:03:03 ===
+POST данные: Array
+(
+    [action] => update
+    [product_id] => 1
+    [quantity] => 3
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: update
+Параметры update: product_id=1, quantity=3
+Успешное обновление корзины: {"success":true,"message":"\u041a\u043e\u0440\u0437\u0438\u043d\u0430 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0430","cart_count":7,"cart_total":"33 954.76 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:03:05 ===
+POST данные: Array
+(
+    [action] => update
+    [product_id] => 1
+    [quantity] => 2
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: update
+Параметры update: product_id=1, quantity=2
+Успешное обновление корзины: {"success":true,"message":"\u041a\u043e\u0440\u0437\u0438\u043d\u0430 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0430","cart_count":6,"cart_total":"31 564.86 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:03:06 ===
+POST данные: Array
+(
+    [action] => update
+    [product_id] => 1
+    [quantity] => 3
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: update
+Параметры update: product_id=1, quantity=3
+Успешное обновление корзины: {"success":true,"message":"\u041a\u043e\u0440\u0437\u0438\u043d\u0430 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0430","cart_count":7,"cart_total":"33 954.76 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:03:06 ===
+POST данные: Array
+(
+    [action] => update
+    [product_id] => 1
+    [quantity] => 4
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: update
+Параметры update: product_id=1, quantity=4
+Успешное обновление корзины: {"success":true,"message":"\u041a\u043e\u0440\u0437\u0438\u043d\u0430 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0430","cart_count":8,"cart_total":"36 344.66 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:03:07 ===
+POST данные: Array
+(
+    [action] => update
+    [product_id] => 1
+    [quantity] => 5
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: update
+Параметры update: product_id=1, quantity=5
+Успешное обновление корзины: {"success":true,"message":"\u041a\u043e\u0440\u0437\u0438\u043d\u0430 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0430","cart_count":9,"cart_total":"38 734.56 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:03:09 ===
+POST данные: Array
+(
+    [action] => update
+    [product_id] => 2
+    [quantity] => 3
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: update
+Параметры update: product_id=2, quantity=3
+Успешное обновление корзины: {"success":true,"message":"\u041a\u043e\u0440\u0437\u0438\u043d\u0430 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0430","cart_count":10,"cart_total":"50 972.49 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:03:11 ===
+POST данные: Array
+(
+    [action] => update
+    [product_id] => 2
+    [quantity] => 2
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: update
+Параметры update: product_id=2, quantity=2
+Успешное обновление корзины: {"success":true,"message":"\u041a\u043e\u0440\u0437\u0438\u043d\u0430 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0430","cart_count":9,"cart_total":"38 734.56 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:03:15 ===
+POST данные: Array
+(
+    [action] => update
+    [product_id] => 3
+    [quantity] => 3
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: update
+Параметры update: product_id=3, quantity=3
+Успешное обновление корзины: {"success":true,"message":"\u041a\u043e\u0440\u0437\u0438\u043d\u0430 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0430","cart_count":10,"cart_total":"39 889.16 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:03:16 ===
+POST данные: Array
+(
+    [action] => update
+    [product_id] => 3
+    [quantity] => 2
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: update
+Параметры update: product_id=3, quantity=2
+Успешное обновление корзины: {"success":true,"message":"\u041a\u043e\u0440\u0437\u0438\u043d\u0430 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0430","cart_count":9,"cart_total":"38 734.56 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:03:36 ===
+POST данные: Array
+(
+    [action] => check_cart
+    [product_ids] => ["1","2","3"]
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: check_cart
+Проверка товаров в корзине
+Результаты проверки: {"1":true,"2":true,"3":true}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:03:40 ===
+POST данные: Array
+(
+    [action] => check_cart
+    [product_ids] => ["1","2","3","4","5","6","7","8","15","16","17","18","19","20","21","22","29","30","31","32","33","34","35","36","43","44","45","46","47","48","49","50","57","58","59","60","61","62","63","64"]
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: check_cart
+Проверка товаров в корзине
+Результаты проверки: {"1":true,"2":true,"3":true,"4":false,"5":false,"6":false,"7":false,"8":false,"15":false,"16":false,"17":false,"18":false,"19":false,"20":false,"21":false,"22":false,"29":false,"30":false,"31":false,"32":false,"33":false,"34":false,"35":false,"36":false,"43":false,"44":false,"45":false,"46":false,"47":false,"48":false,"49":false,"50":false,"57":false,"58":false,"59":false,"60":false,"61":false,"62":false,"63":false,"64":false}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:05:49 ===
+POST данные: Array
+(
+    [action] => check_cart
+    [product_ids] => ["1","2","3"]
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: check_cart
+Проверка товаров в корзине
+Результаты проверки: {"1":false,"2":false,"3":false}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:05:55 ===
+POST данные: Array
+(
+    [action] => check_cart
+    [product_ids] => ["1","2","3","4","5","6","7","8","15","16","17","18","19","20","21","22","29","30","31","32","33","34","35","36","43","44","45","46","47","48","49","50","57","58","59","60","61","62","63","64"]
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: check_cart
+Проверка товаров в корзине
+Результаты проверки: {"1":false,"2":false,"3":false,"4":false,"5":false,"6":false,"7":false,"8":false,"15":false,"16":false,"17":false,"18":false,"19":false,"20":false,"21":false,"22":false,"29":false,"30":false,"31":false,"32":false,"33":false,"34":false,"35":false,"36":false,"43":false,"44":false,"45":false,"46":false,"47":false,"48":false,"49":false,"50":false,"57":false,"58":false,"59":false,"60":false,"61":false,"62":false,"63":false,"64":false}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:06:01 ===
+POST данные: Array
+(
+    [action] => check_cart
+    [product_ids] => ["1","2","3"]
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: check_cart
+Проверка товаров в корзине
+Результаты проверки: {"1":false,"2":false,"3":false}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:06:02 ===
+POST данные: Array
+(
+    [action] => check_cart
+    [product_ids] => ["12","13","14","26","27","28","40","41","42","54","55","56","68","69","70"]
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: check_cart
+Проверка товаров в корзине
+Результаты проверки: {"12":false,"13":false,"14":false,"26":false,"27":false,"28":false,"40":false,"41":false,"42":false,"54":false,"55":false,"56":false,"68":false,"69":false,"70":false}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:06:05 ===
+POST данные: Array
+(
+    [action] => check_cart
+    [product_ids] => ["1","2","3"]
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: check_cart
+Проверка товаров в корзине
+Результаты проверки: {"1":false,"2":false,"3":false}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:06:05 ===
+POST данные: Array
+(
+    [action] => check_cart
+    [product_ids] => ["9","10","11","23","24","25","37","38","39","51","52","53","65","66","67"]
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: check_cart
+Проверка товаров в корзине
+Результаты проверки: {"9":false,"10":false,"11":false,"23":false,"24":false,"25":false,"37":false,"38":false,"39":false,"51":false,"52":false,"53":false,"65":false,"66":false,"67":false}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:06:06 ===
+POST данные: Array
+(
+    [action] => check_cart
+    [product_ids] => ["1","2","3"]
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: check_cart
+Проверка товаров в корзине
+Результаты проверки: {"1":false,"2":false,"3":false}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:06:09 ===
+POST данные: Array
+(
+    [action] => add
+    [product_id] => 1
+    [price] => 2389.90
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: add
+Параметры: product_id=1, price=2389.9, quantity=1
+Товар найден: Array
+(
+    [id] => 1
+    [name] => Gigabyte GeForce RTX 5070 Gaming OC 12G
+    [image] => IMG/one.png
+)
+
+Результат add_to_cart: успешно
+Успешный ответ: {"success":true,"message":"\u0422\u043e\u0432\u0430\u0440 \u0434\u043e\u0431\u0430\u0432\u043b\u0435\u043d \u0432 \u043a\u043e\u0440\u0437\u0438\u043d\u0443","product_name":"Gigabyte GeForce RTX 5070 Gaming OC 12G","product_image":"IMG\/one.png","cart_count":1,"cart_total":"2 389.90 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:06:09 ===
+POST данные: Array
+(
+    [action] => add
+    [product_id] => 1
+    [price] => 2389.90
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: add
+Параметры: product_id=1, price=2389.9, quantity=1
+Товар найден: Array
+(
+    [id] => 1
+    [name] => Gigabyte GeForce RTX 5070 Gaming OC 12G
+    [image] => IMG/one.png
+)
+
+Результат add_to_cart: успешно
+Успешный ответ: {"success":true,"message":"\u0422\u043e\u0432\u0430\u0440 \u0434\u043e\u0431\u0430\u0432\u043b\u0435\u043d \u0432 \u043a\u043e\u0440\u0437\u0438\u043d\u0443","product_name":"Gigabyte GeForce RTX 5070 Gaming OC 12G","product_image":"IMG\/one.png","cart_count":2,"cart_total":"4 779.80 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:06:47 ===
+POST данные: Array
+(
+    [action] => update
+    [product_id] => 1
+    [quantity] => 1
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: update
+Параметры update: product_id=1, quantity=1
+Успешное обновление корзины: {"success":true,"message":"\u041a\u043e\u0440\u0437\u0438\u043d\u0430 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0430","cart_count":1,"cart_total":"2 389.90 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:06:55 ===
+POST данные: Array
+(
+    [action] => check_cart
+    [product_ids] => ["1","2","3"]
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: check_cart
+Проверка товаров в корзине
+Результаты проверки: {"1":true,"2":false,"3":false}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:10:05 ===
+POST данные: Array
+(
+    [action] => update
+    [product_id] => 1
+    [quantity] => 2
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: update
+Параметры update: product_id=1, quantity=2
+Успешное обновление корзины: {"success":true,"message":"\u041a\u043e\u0440\u0437\u0438\u043d\u0430 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0430","cart_count":2,"cart_total":"4 779.80 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:10:07 ===
+POST данные: Array
+(
+    [action] => update
+    [product_id] => 1
+    [quantity] => 1
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: update
+Параметры update: product_id=1, quantity=1
+Успешное обновление корзины: {"success":true,"message":"\u041a\u043e\u0440\u0437\u0438\u043d\u0430 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0430","cart_count":1,"cart_total":"2 389.90 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:10:13 ===
+POST данные: Array
+(
+    [action] => update
+    [product_id] => 1
+    [quantity] => 2
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: update
+Параметры update: product_id=1, quantity=2
+Успешное обновление корзины: {"success":true,"message":"\u041a\u043e\u0440\u0437\u0438\u043d\u0430 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0430","cart_count":2,"cart_total":"4 779.80 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:10:20 ===
+POST данные: Array
+(
+    [action] => update
+    [product_id] => 1
+    [quantity] => 1
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: update
+Параметры update: product_id=1, quantity=1
+Успешное обновление корзины: {"success":true,"message":"\u041a\u043e\u0440\u0437\u0438\u043d\u0430 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0430","cart_count":1,"cart_total":"2 389.90 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:10:22 ===
+POST данные: Array
+(
+    [action] => update
+    [product_id] => 1
+    [quantity] => 2
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: update
+Параметры update: product_id=1, quantity=2
+Успешное обновление корзины: {"success":true,"message":"\u041a\u043e\u0440\u0437\u0438\u043d\u0430 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0430","cart_count":2,"cart_total":"4 779.80 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:10:24 ===
+POST данные: Array
+(
+    [action] => update
+    [product_id] => 1
+    [quantity] => 3
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: update
+Параметры update: product_id=1, quantity=3
+Успешное обновление корзины: {"success":true,"message":"\u041a\u043e\u0440\u0437\u0438\u043d\u0430 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0430","cart_count":3,"cart_total":"7 169.70 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:10:25 ===
+POST данные: Array
+(
+    [action] => update
+    [product_id] => 1
+    [quantity] => 2
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: update
+Параметры update: product_id=1, quantity=2
+Успешное обновление корзины: {"success":true,"message":"\u041a\u043e\u0440\u0437\u0438\u043d\u0430 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0430","cart_count":2,"cart_total":"4 779.80 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:10:25 ===
+POST данные: Array
+(
+    [action] => update
+    [product_id] => 1
+    [quantity] => 1
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: update
+Параметры update: product_id=1, quantity=1
+Успешное обновление корзины: {"success":true,"message":"\u041a\u043e\u0440\u0437\u0438\u043d\u0430 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0430","cart_count":1,"cart_total":"2 389.90 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:10:26 ===
+POST данные: Array
+(
+    [action] => update
+    [product_id] => 1
+    [quantity] => 2
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: update
+Параметры update: product_id=1, quantity=2
+Успешное обновление корзины: {"success":true,"message":"\u041a\u043e\u0440\u0437\u0438\u043d\u0430 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0430","cart_count":2,"cart_total":"4 779.80 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:10:34 ===
+POST данные: Array
+(
+    [action] => update
+    [product_id] => 1
+    [quantity] => 1
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: update
+Параметры update: product_id=1, quantity=1
+Успешное обновление корзины: {"success":true,"message":"\u041a\u043e\u0440\u0437\u0438\u043d\u0430 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0430","cart_count":1,"cart_total":"2 389.90 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:11:49 ===
+POST данные: Array
+(
+    [action] => update
+    [product_id] => 1
+    [quantity] => 2
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: update
+Параметры update: product_id=1, quantity=2
+Успешное обновление корзины: {"success":true,"message":"\u041a\u043e\u0440\u0437\u0438\u043d\u0430 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0430","cart_count":2,"cart_total":"4 779.80 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:14:21 ===
+POST данные: Array
+(
+    [action] => update
+    [product_id] => 1
+    [quantity] => 1
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: update
+Параметры update: product_id=1, quantity=1
+Товар: Array
+(
+    [name] => Gigabyte GeForce RTX 5070 Gaming OC 12G
+    [price] => 2389.90
+    [quantity] => 1
+    [cart_price] => 2389.90
+)
+
+Цена: 2389.90, Количество: 1, Подытог: 2389.9
+Успешное обновление корзины: {"success":true,"message":"\u041a\u043e\u0440\u0437\u0438\u043d\u0430 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0430","cart_count":1,"cart_total":"2 389.90 BYN","product_price":"2389.90","product_quantity":1,"product_subtotal":"2 389.90 BYN","product_subtotal_raw":2389.9}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:14:22 ===
+POST данные: Array
+(
+    [action] => update
+    [product_id] => 1
+    [quantity] => 2
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: update
+Параметры update: product_id=1, quantity=2
+Товар: Array
+(
+    [name] => Gigabyte GeForce RTX 5070 Gaming OC 12G
+    [price] => 2389.90
+    [quantity] => 2
+    [cart_price] => 2389.90
+)
+
+Цена: 2389.90, Количество: 2, Подытог: 4779.8
+Успешное обновление корзины: {"success":true,"message":"\u041a\u043e\u0440\u0437\u0438\u043d\u0430 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0430","cart_count":2,"cart_total":"4 779.80 BYN","product_price":"2389.90","product_quantity":2,"product_subtotal":"4 779.80 BYN","product_subtotal_raw":4779.8}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:14:23 ===
+POST данные: Array
+(
+    [action] => update
+    [product_id] => 1
+    [quantity] => 3
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: update
+Параметры update: product_id=1, quantity=3
+Товар: Array
+(
+    [name] => Gigabyte GeForce RTX 5070 Gaming OC 12G
+    [price] => 2389.90
+    [quantity] => 3
+    [cart_price] => 2389.90
+)
+
+Цена: 2389.90, Количество: 3, Подытог: 7169.7
+Успешное обновление корзины: {"success":true,"message":"\u041a\u043e\u0440\u0437\u0438\u043d\u0430 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0430","cart_count":3,"cart_total":"7 169.70 BYN","product_price":"2389.90","product_quantity":3,"product_subtotal":"7 169.70 BYN","product_subtotal_raw":7169.700000000001}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:14:23 ===
+POST данные: Array
+(
+    [action] => update
+    [product_id] => 1
+    [quantity] => 4
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: update
+Параметры update: product_id=1, quantity=4
+Товар: Array
+(
+    [name] => Gigabyte GeForce RTX 5070 Gaming OC 12G
+    [price] => 2389.90
+    [quantity] => 4
+    [cart_price] => 2389.90
+)
+
+Цена: 2389.90, Количество: 4, Подытог: 9559.6
+Успешное обновление корзины: {"success":true,"message":"\u041a\u043e\u0440\u0437\u0438\u043d\u0430 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0430","cart_count":4,"cart_total":"9 559.60 BYN","product_price":"2389.90","product_quantity":4,"product_subtotal":"9 559.60 BYN","product_subtotal_raw":9559.6}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:14:24 ===
+POST данные: Array
+(
+    [action] => update
+    [product_id] => 1
+    [quantity] => 3
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: update
+Параметры update: product_id=1, quantity=3
+Товар: Array
+(
+    [name] => Gigabyte GeForce RTX 5070 Gaming OC 12G
+    [price] => 2389.90
+    [quantity] => 3
+    [cart_price] => 2389.90
+)
+
+Цена: 2389.90, Количество: 3, Подытог: 7169.7
+Успешное обновление корзины: {"success":true,"message":"\u041a\u043e\u0440\u0437\u0438\u043d\u0430 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0430","cart_count":3,"cart_total":"7 169.70 BYN","product_price":"2389.90","product_quantity":3,"product_subtotal":"7 169.70 BYN","product_subtotal_raw":7169.700000000001}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:14:24 ===
+POST данные: Array
+(
+    [action] => update
+    [product_id] => 1
+    [quantity] => 2
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: update
+Параметры update: product_id=1, quantity=2
+Товар: Array
+(
+    [name] => Gigabyte GeForce RTX 5070 Gaming OC 12G
+    [price] => 2389.90
+    [quantity] => 2
+    [cart_price] => 2389.90
+)
+
+Цена: 2389.90, Количество: 2, Подытог: 4779.8
+Успешное обновление корзины: {"success":true,"message":"\u041a\u043e\u0440\u0437\u0438\u043d\u0430 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0430","cart_count":2,"cart_total":"4 779.80 BYN","product_price":"2389.90","product_quantity":2,"product_subtotal":"4 779.80 BYN","product_subtotal_raw":4779.8}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:14:24 ===
+POST данные: Array
+(
+    [action] => update
+    [product_id] => 1
+    [quantity] => 1
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: update
+Параметры update: product_id=1, quantity=1
+Товар: Array
+(
+    [name] => Gigabyte GeForce RTX 5070 Gaming OC 12G
+    [price] => 2389.90
+    [quantity] => 1
+    [cart_price] => 2389.90
+)
+
+Цена: 2389.90, Количество: 1, Подытог: 2389.9
+Успешное обновление корзины: {"success":true,"message":"\u041a\u043e\u0440\u0437\u0438\u043d\u0430 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0430","cart_count":1,"cart_total":"2 389.90 BYN","product_price":"2389.90","product_quantity":1,"product_subtotal":"2 389.90 BYN","product_subtotal_raw":2389.9}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:15:24 ===
+POST данные: Array
+(
+    [action] => check_cart
+    [product_ids] => ["1","2","3"]
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: check_cart
+Проверка товаров в корзине
+Результаты проверки: {"1":false,"2":false,"3":false}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:15:32 ===
+POST данные: Array
+(
+    [action] => check_cart
+    [product_ids] => ["1","2","3"]
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: check_cart
+Проверка товаров в корзине
+Результаты проверки: {"1":false,"2":false,"3":false}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:15:33 ===
+POST данные: Array
+(
+    [action] => check_cart
+    [product_ids] => ["1","2","3","4","5","6","7","8","15","16","17","18","19","20","21","22","29","30","31","32","33","34","35","36","43","44","45","46","47","48","49","50","57","58","59","60","61","62","63","64"]
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: check_cart
+Проверка товаров в корзине
+Результаты проверки: {"1":false,"2":false,"3":false,"4":false,"5":false,"6":false,"7":false,"8":false,"15":false,"16":false,"17":false,"18":false,"19":false,"20":false,"21":false,"22":false,"29":false,"30":false,"31":false,"32":false,"33":false,"34":false,"35":false,"36":false,"43":false,"44":false,"45":false,"46":false,"47":false,"48":false,"49":false,"50":false,"57":false,"58":false,"59":false,"60":false,"61":false,"62":false,"63":false,"64":false}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:15:34 ===
+POST данные: Array
+(
+    [action] => add
+    [product_id] => 2
+    [price] => 12237.93
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: add
+Параметры: product_id=2, price=12237.93, quantity=1
+Товар найден: Array
+(
+    [id] => 2
+    [name] => Palit GeForce RTX 5090 GameRock
+    [image] => IMG/two.png
+)
+
+Результат add_to_cart: успешно
+Успешный ответ: {"success":true,"message":"\u0422\u043e\u0432\u0430\u0440 \u0434\u043e\u0431\u0430\u0432\u043b\u0435\u043d \u0432 \u043a\u043e\u0440\u0437\u0438\u043d\u0443","product_name":"Palit GeForce RTX 5090 GameRock","product_image":"IMG\/two.png","cart_count":1,"cart_total":"12 237.93 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:15:34 ===
+POST данные: Array
+(
+    [action] => add
+    [product_id] => 2
+    [price] => 12237.93
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: add
+Параметры: product_id=2, price=12237.93, quantity=1
+Товар найден: Array
+(
+    [id] => 2
+    [name] => Palit GeForce RTX 5090 GameRock
+    [image] => IMG/two.png
+)
+
+Результат add_to_cart: успешно
+Успешный ответ: {"success":true,"message":"\u0422\u043e\u0432\u0430\u0440 \u0434\u043e\u0431\u0430\u0432\u043b\u0435\u043d \u0432 \u043a\u043e\u0440\u0437\u0438\u043d\u0443","product_name":"Palit GeForce RTX 5090 GameRock","product_image":"IMG\/two.png","cart_count":2,"cart_total":"24 475.86 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:15:37 ===
+POST данные: Array
+(
+    [action] => add
+    [product_id] => 3
+    [price] => 1154.60
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: add
+Параметры: product_id=3, price=1154.6, quantity=1
+Товар найден: Array
+(
+    [id] => 3
+    [name] => Gigabyte GeForce RTX 3060 Gaming OC 12GB GDDR6
+    [image] => IMG/p.png
+)
+
+Результат add_to_cart: успешно
+Успешный ответ: {"success":true,"message":"\u0422\u043e\u0432\u0430\u0440 \u0434\u043e\u0431\u0430\u0432\u043b\u0435\u043d \u0432 \u043a\u043e\u0440\u0437\u0438\u043d\u0443","product_name":"Gigabyte GeForce RTX 3060 Gaming OC 12GB GDDR6","product_image":"IMG\/p.png","cart_count":3,"cart_total":"25 630.46 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:15:37 ===
+POST данные: Array
+(
+    [action] => add
+    [product_id] => 3
+    [price] => 1154.60
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: add
+Параметры: product_id=3, price=1154.6, quantity=1
+Товар найден: Array
+(
+    [id] => 3
+    [name] => Gigabyte GeForce RTX 3060 Gaming OC 12GB GDDR6
+    [image] => IMG/p.png
+)
+
+Результат add_to_cart: успешно
+Успешный ответ: {"success":true,"message":"\u0422\u043e\u0432\u0430\u0440 \u0434\u043e\u0431\u0430\u0432\u043b\u0435\u043d \u0432 \u043a\u043e\u0440\u0437\u0438\u043d\u0443","product_name":"Gigabyte GeForce RTX 3060 Gaming OC 12GB GDDR6","product_image":"IMG\/p.png","cart_count":4,"cart_total":"26 785.06 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:15:43 ===
+POST данные: Array
+(
+    [action] => update
+    [product_id] => 2
+    [quantity] => 1
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: update
+Параметры update: product_id=2, quantity=1
+Товар: Array
+(
+    [name] => Palit GeForce RTX 5090 GameRock
+    [price] => 12237.93
+    [quantity] => 1
+    [cart_price] => 12237.93
+)
+
+Цена: 12237.93, Количество: 1, Подытог: 12237.93
+Успешное обновление корзины: {"success":true,"message":"\u041a\u043e\u0440\u0437\u0438\u043d\u0430 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0430","cart_count":3,"cart_total":"14 547.13 BYN","product_price":"12237.93","product_quantity":1,"product_subtotal":"12 237.93 BYN","product_subtotal_raw":12237.93}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:15:44 ===
+POST данные: Array
+(
+    [action] => update
+    [product_id] => 3
+    [quantity] => 1
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: update
+Параметры update: product_id=3, quantity=1
+Товар: Array
+(
+    [name] => Gigabyte GeForce RTX 3060 Gaming OC 12GB GDDR6
+    [price] => 1154.60
+    [quantity] => 1
+    [cart_price] => 1154.60
+)
+
+Цена: 1154.60, Количество: 1, Подытог: 1154.6
+Успешное обновление корзины: {"success":true,"message":"\u041a\u043e\u0440\u0437\u0438\u043d\u0430 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0430","cart_count":2,"cart_total":"13 392.53 BYN","product_price":"1154.60","product_quantity":1,"product_subtotal":"1 154.60 BYN","product_subtotal_raw":1154.6}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:17:30 ===
+POST данные: Array
+(
+    [action] => check_cart
+    [product_ids] => ["1","2","3"]
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: check_cart
+Проверка товаров в корзине
+Результаты проверки: {"1":false,"2":true,"3":true}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:17:31 ===
+POST данные: Array
+(
+    [action] => check_cart
+    [product_ids] => ["12","13","14","26","27","28","40","41","42","54","55","56","68","69","70"]
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: check_cart
+Проверка товаров в корзине
+Результаты проверки: {"12":false,"13":false,"14":false,"26":false,"27":false,"28":false,"40":false,"41":false,"42":false,"54":false,"55":false,"56":false,"68":false,"69":false,"70":false}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:17:32 ===
+POST данные: Array
+(
+    [action] => add
+    [product_id] => 12
+    [price] => 299.90
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: add
+Параметры: product_id=12, price=299.9, quantity=1
+Товар найден: Array
+(
+    [id] => 12
+    [name] => HyperX Cloud Alpha
+    [image] => hyperx.png
+)
+
+Результат add_to_cart: успешно
+Успешный ответ: {"success":true,"message":"\u0422\u043e\u0432\u0430\u0440 \u0434\u043e\u0431\u0430\u0432\u043b\u0435\u043d \u0432 \u043a\u043e\u0440\u0437\u0438\u043d\u0443","product_name":"HyperX Cloud Alpha","product_image":"hyperx.png","cart_count":3,"cart_total":"13 692.43 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:17:32 ===
+POST данные: Array
+(
+    [action] => add
+    [product_id] => 12
+    [price] => 299.90
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: add
+Параметры: product_id=12, price=299.9, quantity=1
+Товар найден: Array
+(
+    [id] => 12
+    [name] => HyperX Cloud Alpha
+    [image] => hyperx.png
+)
+
+Результат add_to_cart: успешно
+Успешный ответ: {"success":true,"message":"\u0422\u043e\u0432\u0430\u0440 \u0434\u043e\u0431\u0430\u0432\u043b\u0435\u043d \u0432 \u043a\u043e\u0440\u0437\u0438\u043d\u0443","product_name":"HyperX Cloud Alpha","product_image":"hyperx.png","cart_count":4,"cart_total":"13 992.33 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:17:34 ===
+POST данные: Array
+(
+    [action] => add
+    [product_id] => 13
+    [price] => 349.90
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: add
+Параметры: product_id=13, price=349.9, quantity=1
+Товар найден: Array
+(
+    [id] => 13
+    [name] => Logitech G Pro X
+    [image] => logitech.png
+)
+
+Результат add_to_cart: успешно
+Успешный ответ: {"success":true,"message":"\u0422\u043e\u0432\u0430\u0440 \u0434\u043e\u0431\u0430\u0432\u043b\u0435\u043d \u0432 \u043a\u043e\u0440\u0437\u0438\u043d\u0443","product_name":"Logitech G Pro X","product_image":"logitech.png","cart_count":5,"cart_total":"14 342.23 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:17:34 ===
+POST данные: Array
+(
+    [action] => add
+    [product_id] => 13
+    [price] => 349.90
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: add
+Параметры: product_id=13, price=349.9, quantity=1
+Товар найден: Array
+(
+    [id] => 13
+    [name] => Logitech G Pro X
+    [image] => logitech.png
+)
+
+Результат add_to_cart: успешно
+Успешный ответ: {"success":true,"message":"\u0422\u043e\u0432\u0430\u0440 \u0434\u043e\u0431\u0430\u0432\u043b\u0435\u043d \u0432 \u043a\u043e\u0440\u0437\u0438\u043d\u0443","product_name":"Logitech G Pro X","product_image":"logitech.png","cart_count":6,"cart_total":"14 692.13 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:17:49 ===
+POST данные: Array
+(
+    [action] => check_cart
+    [product_ids] => ["1","2","3"]
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: check_cart
+Проверка товаров в корзине
+Результаты проверки: {"1":false,"2":true,"3":true}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:17:50 ===
+POST данные: Array
+(
+    [action] => check_cart
+    [product_ids] => ["1","2","3","4","5","6","7","8","15","16","17","18","19","20","21","22","29","30","31","32","33","34","35","36","43","44","45","46","47","48","49","50","57","58","59","60","61","62","63","64"]
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: check_cart
+Проверка товаров в корзине
+Результаты проверки: {"1":false,"2":true,"3":true,"4":false,"5":false,"6":false,"7":false,"8":false,"15":false,"16":false,"17":false,"18":false,"19":false,"20":false,"21":false,"22":false,"29":false,"30":false,"31":false,"32":false,"33":false,"34":false,"35":false,"36":false,"43":false,"44":false,"45":false,"46":false,"47":false,"48":false,"49":false,"50":false,"57":false,"58":false,"59":false,"60":false,"61":false,"62":false,"63":false,"64":false}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:17:52 ===
+POST данные: Array
+(
+    [action] => check_cart
+    [product_ids] => ["1","2","3"]
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: check_cart
+Проверка товаров в корзине
+Результаты проверки: {"1":false,"2":true,"3":true}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:17:54 ===
+POST данные: Array
+(
+    [action] => add
+    [product_id] => 1
+    [price] => 2389.90
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: add
+Параметры: product_id=1, price=2389.9, quantity=1
+Товар найден: Array
+(
+    [id] => 1
+    [name] => Gigabyte GeForce RTX 5070 Gaming OC 12G
+    [image] => IMG/one.png
+)
+
+Результат add_to_cart: успешно
+Успешный ответ: {"success":true,"message":"\u0422\u043e\u0432\u0430\u0440 \u0434\u043e\u0431\u0430\u0432\u043b\u0435\u043d \u0432 \u043a\u043e\u0440\u0437\u0438\u043d\u0443","product_name":"Gigabyte GeForce RTX 5070 Gaming OC 12G","product_image":"IMG\/one.png","cart_count":7,"cart_total":"17 082.03 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:17:54 ===
+POST данные: Array
+(
+    [action] => add
+    [product_id] => 1
+    [price] => 2389.90
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 3
+    [username] => 123456
+    [email] => 1@mail.ru
+    [role] => user
+)
+
+Действие: add
+Параметры: product_id=1, price=2389.9, quantity=1
+Товар найден: Array
+(
+    [id] => 1
+    [name] => Gigabyte GeForce RTX 5070 Gaming OC 12G
+    [image] => IMG/one.png
+)
+
+Результат add_to_cart: успешно
+Успешный ответ: {"success":true,"message":"\u0422\u043e\u0432\u0430\u0440 \u0434\u043e\u0431\u0430\u0432\u043b\u0435\u043d \u0432 \u043a\u043e\u0440\u0437\u0438\u043d\u0443","product_name":"Gigabyte GeForce RTX 5070 Gaming OC 12G","product_image":"IMG\/one.png","cart_count":8,"cart_total":"19 471.93 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:18:36 ===
+POST данные: Array
+(
+    [action] => clear
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: clear
+Очистка корзины
+Успешная очистка корзины
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:18:38 ===
+POST данные: Array
+(
+    [action] => check_cart
+    [product_ids] => ["1","2","3"]
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: check_cart
+Проверка товаров в корзине
+Результаты проверки: {"1":false,"2":false,"3":false}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:18:40 ===
+POST данные: Array
+(
+    [action] => add
+    [product_id] => 1
+    [price] => 2389.90
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: add
+Параметры: product_id=1, price=2389.9, quantity=1
+Товар найден: Array
+(
+    [id] => 1
+    [name] => Gigabyte GeForce RTX 5070 Gaming OC 12G
+    [image] => IMG/one.png
+)
+
+Результат add_to_cart: успешно
+Успешный ответ: {"success":true,"message":"\u0422\u043e\u0432\u0430\u0440 \u0434\u043e\u0431\u0430\u0432\u043b\u0435\u043d \u0432 \u043a\u043e\u0440\u0437\u0438\u043d\u0443","product_name":"Gigabyte GeForce RTX 5070 Gaming OC 12G","product_image":"IMG\/one.png","cart_count":1,"cart_total":"2 389.90 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:18:40 ===
+POST данные: Array
+(
+    [action] => add
+    [product_id] => 1
+    [price] => 2389.90
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: add
+Параметры: product_id=1, price=2389.9, quantity=1
+Товар найден: Array
+(
+    [id] => 1
+    [name] => Gigabyte GeForce RTX 5070 Gaming OC 12G
+    [image] => IMG/one.png
+)
+
+Результат add_to_cart: успешно
+Успешный ответ: {"success":true,"message":"\u0422\u043e\u0432\u0430\u0440 \u0434\u043e\u0431\u0430\u0432\u043b\u0435\u043d \u0432 \u043a\u043e\u0440\u0437\u0438\u043d\u0443","product_name":"Gigabyte GeForce RTX 5070 Gaming OC 12G","product_image":"IMG\/one.png","cart_count":2,"cart_total":"4 779.80 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:18:41 ===
+POST данные: Array
+(
+    [action] => add
+    [product_id] => 2
+    [price] => 12237.93
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: add
+Параметры: product_id=2, price=12237.93, quantity=1
+Товар найден: Array
+(
+    [id] => 2
+    [name] => Palit GeForce RTX 5090 GameRock
+    [image] => IMG/two.png
+)
+
+Результат add_to_cart: успешно
+Успешный ответ: {"success":true,"message":"\u0422\u043e\u0432\u0430\u0440 \u0434\u043e\u0431\u0430\u0432\u043b\u0435\u043d \u0432 \u043a\u043e\u0440\u0437\u0438\u043d\u0443","product_name":"Palit GeForce RTX 5090 GameRock","product_image":"IMG\/two.png","cart_count":3,"cart_total":"17 017.73 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:18:41 ===
+POST данные: Array
+(
+    [action] => add
+    [product_id] => 2
+    [price] => 12237.93
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: add
+Параметры: product_id=2, price=12237.93, quantity=1
+Товар найден: Array
+(
+    [id] => 2
+    [name] => Palit GeForce RTX 5090 GameRock
+    [image] => IMG/two.png
+)
+
+Результат add_to_cart: успешно
+Успешный ответ: {"success":true,"message":"\u0422\u043e\u0432\u0430\u0440 \u0434\u043e\u0431\u0430\u0432\u043b\u0435\u043d \u0432 \u043a\u043e\u0440\u0437\u0438\u043d\u0443","product_name":"Palit GeForce RTX 5090 GameRock","product_image":"IMG\/two.png","cart_count":4,"cart_total":"29 255.66 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:18:42 ===
+POST данные: Array
+(
+    [action] => add
+    [product_id] => 3
+    [price] => 1154.60
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: add
+Параметры: product_id=3, price=1154.6, quantity=1
+Товар найден: Array
+(
+    [id] => 3
+    [name] => Gigabyte GeForce RTX 3060 Gaming OC 12GB GDDR6
+    [image] => IMG/p.png
+)
+
+Результат add_to_cart: успешно
+Успешный ответ: {"success":true,"message":"\u0422\u043e\u0432\u0430\u0440 \u0434\u043e\u0431\u0430\u0432\u043b\u0435\u043d \u0432 \u043a\u043e\u0440\u0437\u0438\u043d\u0443","product_name":"Gigabyte GeForce RTX 3060 Gaming OC 12GB GDDR6","product_image":"IMG\/p.png","cart_count":5,"cart_total":"30 410.26 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:18:42 ===
+POST данные: Array
+(
+    [action] => add
+    [product_id] => 3
+    [price] => 1154.60
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: add
+Параметры: product_id=3, price=1154.6, quantity=1
+Товар найден: Array
+(
+    [id] => 3
+    [name] => Gigabyte GeForce RTX 3060 Gaming OC 12GB GDDR6
+    [image] => IMG/p.png
+)
+
+Результат add_to_cart: успешно
+Успешный ответ: {"success":true,"message":"\u0422\u043e\u0432\u0430\u0440 \u0434\u043e\u0431\u0430\u0432\u043b\u0435\u043d \u0432 \u043a\u043e\u0440\u0437\u0438\u043d\u0443","product_name":"Gigabyte GeForce RTX 3060 Gaming OC 12GB GDDR6","product_image":"IMG\/p.png","cart_count":6,"cart_total":"31 564.86 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:21:41 ===
+POST данные: Array
+(
+    [action] => check_cart
+    [product_ids] => ["1","2","3"]
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: check_cart
+Проверка товаров в корзине
+Результаты проверки: {"1":true,"2":true,"3":true}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:22:22 ===
+POST данные: Array
+(
+    [action] => update
+    [product_id] => 1
+    [quantity] => 1
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: update
+Параметры update: product_id=1, quantity=1
+Товар: Array
+(
+    [name] => Gigabyte GeForce RTX 5070 Gaming OC 12G
+    [price] => 2389.90
+    [quantity] => 1
+    [cart_price] => 2389.90
+)
+
+Цена: 2389.90, Количество: 1, Подытог: 2389.9
+Успешное обновление корзины: {"success":true,"message":"\u041a\u043e\u0440\u0437\u0438\u043d\u0430 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0430","cart_count":5,"cart_total":"29 174.96 BYN","product_price":"2389.90","product_quantity":1,"product_subtotal":"2 389.90 BYN","product_subtotal_raw":2389.9}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:22:23 ===
+POST данные: Array
+(
+    [action] => update
+    [product_id] => 2
+    [quantity] => 1
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: update
+Параметры update: product_id=2, quantity=1
+Товар: Array
+(
+    [name] => Palit GeForce RTX 5090 GameRock
+    [price] => 12237.93
+    [quantity] => 1
+    [cart_price] => 12237.93
+)
+
+Цена: 12237.93, Количество: 1, Подытог: 12237.93
+Успешное обновление корзины: {"success":true,"message":"\u041a\u043e\u0440\u0437\u0438\u043d\u0430 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0430","cart_count":4,"cart_total":"16 937.03 BYN","product_price":"12237.93","product_quantity":1,"product_subtotal":"12 237.93 BYN","product_subtotal_raw":12237.93}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:22:24 ===
+POST данные: Array
+(
+    [action] => update
+    [product_id] => 3
+    [quantity] => 1
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: update
+Параметры update: product_id=3, quantity=1
+Товар: Array
+(
+    [name] => Gigabyte GeForce RTX 3060 Gaming OC 12GB GDDR6
+    [price] => 1154.60
+    [quantity] => 1
+    [cart_price] => 1154.60
+)
+
+Цена: 1154.60, Количество: 1, Подытог: 1154.6
+Успешное обновление корзины: {"success":true,"message":"\u041a\u043e\u0440\u0437\u0438\u043d\u0430 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0430","cart_count":3,"cart_total":"15 782.43 BYN","product_price":"1154.60","product_quantity":1,"product_subtotal":"1 154.60 BYN","product_subtotal_raw":1154.6}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:22:48 ===
+POST данные: Array
+(
+    [action] => check_cart
+    [product_ids] => ["1","2","3"]
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: check_cart
+Проверка товаров в корзине
+Результаты проверки: {"1":true,"2":true,"3":true}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:22:51 ===
+POST данные: Array
+(
+    [action] => check_cart
+    [product_ids] => ["1","2","3","4","5","6","7","8","15","16","17","18","19","20","21","22","29","30","31","32","33","34","35","36","43","44","45","46","47","48","49","50","57","58","59","60","61","62","63","64"]
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: check_cart
+Проверка товаров в корзине
+Результаты проверки: {"1":true,"2":true,"3":true,"4":false,"5":false,"6":false,"7":false,"8":false,"15":false,"16":false,"17":false,"18":false,"19":false,"20":false,"21":false,"22":false,"29":false,"30":false,"31":false,"32":false,"33":false,"34":false,"35":false,"36":false,"43":false,"44":false,"45":false,"46":false,"47":false,"48":false,"49":false,"50":false,"57":false,"58":false,"59":false,"60":false,"61":false,"62":false,"63":false,"64":false}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:22:53 ===
+POST данные: Array
+(
+    [action] => add
+    [product_id] => 4
+    [price] => 2869.82
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: add
+Параметры: product_id=4, price=2869.82, quantity=1
+Товар найден: Array
+(
+    [id] => 4
+    [name] => Gigabyte GeForce RTX 5070 Aero OC 12G
+    [image] => IMG/fff.png
+)
+
+Результат add_to_cart: успешно
+Успешный ответ: {"success":true,"message":"\u0422\u043e\u0432\u0430\u0440 \u0434\u043e\u0431\u0430\u0432\u043b\u0435\u043d \u0432 \u043a\u043e\u0440\u0437\u0438\u043d\u0443","product_name":"Gigabyte GeForce RTX 5070 Aero OC 12G","product_image":"IMG\/fff.png","cart_count":4,"cart_total":"18 652.25 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:22:54 ===
+POST данные: Array
+(
+    [action] => add
+    [product_id] => 4
+    [price] => 2869.82
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: add
+Параметры: product_id=4, price=2869.82, quantity=1
+Товар найден: Array
+(
+    [id] => 4
+    [name] => Gigabyte GeForce RTX 5070 Aero OC 12G
+    [image] => IMG/fff.png
+)
+
+Результат add_to_cart: успешно
+Успешный ответ: {"success":true,"message":"\u0422\u043e\u0432\u0430\u0440 \u0434\u043e\u0431\u0430\u0432\u043b\u0435\u043d \u0432 \u043a\u043e\u0440\u0437\u0438\u043d\u0443","product_name":"Gigabyte GeForce RTX 5070 Aero OC 12G","product_image":"IMG\/fff.png","cart_count":5,"cart_total":"21 522.07 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:22:54 ===
+POST данные: Array
+(
+    [action] => add
+    [product_id] => 5
+    [price] => 2329.11
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: add
+Параметры: product_id=5, price=2329.11, quantity=1
+Товар найден: Array
+(
+    [id] => 5
+    [name] => MSI GeForce RTX 5060 Ti 16G Gaming Trio OC
+    [image] => IMG/600.png
+)
+
+Результат add_to_cart: успешно
+Успешный ответ: {"success":true,"message":"\u0422\u043e\u0432\u0430\u0440 \u0434\u043e\u0431\u0430\u0432\u043b\u0435\u043d \u0432 \u043a\u043e\u0440\u0437\u0438\u043d\u0443","product_name":"MSI GeForce RTX 5060 Ti 16G Gaming Trio OC","product_image":"IMG\/600.png","cart_count":6,"cart_total":"23 851.18 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:22:54 ===
+POST данные: Array
+(
+    [action] => add
+    [product_id] => 5
+    [price] => 2329.11
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: add
+Параметры: product_id=5, price=2329.11, quantity=1
+Товар найден: Array
+(
+    [id] => 5
+    [name] => MSI GeForce RTX 5060 Ti 16G Gaming Trio OC
+    [image] => IMG/600.png
+)
+
+Результат add_to_cart: успешно
+Успешный ответ: {"success":true,"message":"\u0422\u043e\u0432\u0430\u0440 \u0434\u043e\u0431\u0430\u0432\u043b\u0435\u043d \u0432 \u043a\u043e\u0440\u0437\u0438\u043d\u0443","product_name":"MSI GeForce RTX 5060 Ti 16G Gaming Trio OC","product_image":"IMG\/600.png","cart_count":7,"cart_total":"26 180.29 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:23:01 ===
+POST данные: Array
+(
+    [action] => update
+    [product_id] => 4
+    [quantity] => 1
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: update
+Параметры update: product_id=4, quantity=1
+Товар: Array
+(
+    [name] => Gigabyte GeForce RTX 5070 Aero OC 12G
+    [price] => 2869.82
+    [quantity] => 1
+    [cart_price] => 2869.82
+)
+
+Цена: 2869.82, Количество: 1, Подытог: 2869.82
+Успешное обновление корзины: {"success":true,"message":"\u041a\u043e\u0440\u0437\u0438\u043d\u0430 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0430","cart_count":6,"cart_total":"23 310.47 BYN","product_price":"2869.82","product_quantity":1,"product_subtotal":"2 869.82 BYN","product_subtotal_raw":2869.82}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:23:03 ===
+POST данные: Array
+(
+    [action] => update
+    [product_id] => 5
+    [quantity] => 1
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: update
+Параметры update: product_id=5, quantity=1
+Товар: Array
+(
+    [name] => MSI GeForce RTX 5060 Ti 16G Gaming Trio OC
+    [price] => 2329.11
+    [quantity] => 1
+    [cart_price] => 2329.11
+)
+
+Цена: 2329.11, Количество: 1, Подытог: 2329.11
+Успешное обновление корзины: {"success":true,"message":"\u041a\u043e\u0440\u0437\u0438\u043d\u0430 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0430","cart_count":5,"cart_total":"20 981.36 BYN","product_price":"2329.11","product_quantity":1,"product_subtotal":"2 329.11 BYN","product_subtotal_raw":2329.11}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:23:08 ===
+POST данные: Array
+(
+    [action] => remove
+    [product_id] => 5
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: remove
+Удаление товара: product_id=5
+Успешное удаление товара: {"success":true,"message":"\u0422\u043e\u0432\u0430\u0440 \u0443\u0434\u0430\u043b\u0435\u043d \u0438\u0437 \u043a\u043e\u0440\u0437\u0438\u043d\u044b","cart_count":4,"cart_total":"18 652.25 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:23:11 ===
+POST данные: Array
+(
+    [action] => remove
+    [product_id] => 4
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: remove
+Удаление товара: product_id=4
+Успешное удаление товара: {"success":true,"message":"\u0422\u043e\u0432\u0430\u0440 \u0443\u0434\u0430\u043b\u0435\u043d \u0438\u0437 \u043a\u043e\u0440\u0437\u0438\u043d\u044b","cart_count":3,"cart_total":"15 782.43 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:23:16 ===
+POST данные: Array
+(
+    [action] => clear
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: clear
+Очистка корзины
+Успешная очистка корзины
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:23:20 ===
+POST данные: Array
+(
+    [action] => check_cart
+    [product_ids] => ["1","2","3"]
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: check_cart
+Проверка товаров в корзине
+Результаты проверки: {"1":false,"2":false,"3":false}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:27:48 ===
+POST данные: Array
+(
+    [action] => check_cart
+    [product_ids] => ["1","2","3"]
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: check_cart
+Проверка товаров в корзине
+Результаты проверки: {"1":false,"2":false,"3":false}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:27:52 ===
+POST данные: Array
+(
+    [action] => add
+    [product_id] => 1
+    [price] => 2389.90
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: add
+Параметры: product_id=1, price=2389.9, quantity=1
+Товар найден: Array
+(
+    [id] => 1
+    [name] => Gigabyte GeForce RTX 5070 Gaming OC 12G
+    [image] => IMG/one.png
+)
+
+Результат add_to_cart: успешно
+Успешный ответ: {"success":true,"message":"\u0422\u043e\u0432\u0430\u0440 \u0434\u043e\u0431\u0430\u0432\u043b\u0435\u043d \u0432 \u043a\u043e\u0440\u0437\u0438\u043d\u0443","product_name":"Gigabyte GeForce RTX 5070 Gaming OC 12G","product_image":"IMG\/one.png","cart_count":1,"cart_total":"2 389.90 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:27:53 ===
+POST данные: Array
+(
+    [action] => add
+    [product_id] => 2
+    [price] => 12237.93
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: add
+Параметры: product_id=2, price=12237.93, quantity=1
+Товар найден: Array
+(
+    [id] => 2
+    [name] => Palit GeForce RTX 5090 GameRock
+    [image] => IMG/two.png
+)
+
+Результат add_to_cart: успешно
+Успешный ответ: {"success":true,"message":"\u0422\u043e\u0432\u0430\u0440 \u0434\u043e\u0431\u0430\u0432\u043b\u0435\u043d \u0432 \u043a\u043e\u0440\u0437\u0438\u043d\u0443","product_name":"Palit GeForce RTX 5090 GameRock","product_image":"IMG\/two.png","cart_count":2,"cart_total":"14 627.83 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:27:54 ===
+POST данные: Array
+(
+    [action] => add
+    [product_id] => 3
+    [price] => 1154.60
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: add
+Параметры: product_id=3, price=1154.6, quantity=1
+Товар найден: Array
+(
+    [id] => 3
+    [name] => Gigabyte GeForce RTX 3060 Gaming OC 12GB GDDR6
+    [image] => IMG/p.png
+)
+
+Результат add_to_cart: успешно
+Успешный ответ: {"success":true,"message":"\u0422\u043e\u0432\u0430\u0440 \u0434\u043e\u0431\u0430\u0432\u043b\u0435\u043d \u0432 \u043a\u043e\u0440\u0437\u0438\u043d\u0443","product_name":"Gigabyte GeForce RTX 3060 Gaming OC 12GB GDDR6","product_image":"IMG\/p.png","cart_count":3,"cart_total":"15 782.43 BYN"}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:28:26 ===
+POST данные: Array
+(
+    [action] => check_cart
+    [product_ids] => ["1","2","3"]
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: check_cart
+Проверка товаров в корзине
+Результаты проверки: {"1":true,"2":true,"3":true}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 01:44:31 ===
+POST данные: Array
+(
+    [action] => check_cart
+    [product_ids] => ["1","2","3"]
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: check_cart
+Проверка товаров в корзине
+Результаты проверки: {"1":true,"2":true,"3":true}
+=== Конец запроса ===
+
+=== Запрос к cart_ajax.php: 2025-06-08 02:20:25 ===
+POST данные: Array
+(
+    [action] => clear
+)
+
+GET данные: Array
+(
+)
+
+SESSION данные: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [email] => admin@cyberx.com
+    [role] => admin
+)
+
+Действие: clear
+Очистка корзины
+Успешная очистка корзины
+=== Конец запроса ===
+

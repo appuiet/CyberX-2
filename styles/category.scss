@@ -1,0 +1,89 @@
+$primary-color: #e30a0e;
+$bg-dark: #151414;
+$text-color: #fff;
+$border-radius: 6px;
+$shadow-neon: 0 0 14px rgba($primary-color, .8);
+$font-main: "Orbitron", sans-serif;
+$transition-fast: 0.3s ease;
+
+/* ---------- CATEGORY PAGE WRAPPER ---------- */
+.shop-container {
+  padding: 3rem 1rem 5rem;
+  background: $bg-dark;
+  color: $text-color;
+  font-family: $font-main;
+}
+
+/* ---------- CATEGORY HERO / HEADER ---------- */
+.category-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  animation: fadeInUp 0.8s ease-out forwards;
+
+  h1 {
+    font-size: 2.4rem;
+    margin: 0 0 0.8rem;
+    text-transform: uppercase;
+    text-shadow: $shadow-neon;
+  }
+
+  p {
+    margin: 0 auto 1.5rem;
+    max-width: 720px;
+    font-size: 1rem;
+    color: lighten($text-color, 35%);
+  }
+
+  .back-to-shop {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: transparent;
+    border: 2px solid rgba($primary-color, 0.6);
+    color: $primary-color;
+    padding: 0.6rem 1.4rem;
+    border-radius: $border-radius;
+    font-size: 0.9rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background $transition-fast, color $transition-fast, box-shadow $transition-fast;
+
+    i { font-size: 1rem; }
+
+    &:hover {
+      background: $primary-color;
+      color: #000;
+      box-shadow: $shadow-neon;
+    }
+  }
+}
+
+/* ---------- EMPTY STATE ---------- */
+.no-products {
+  text-align: center;
+  color: lighten($text-color, 50%);
+  font-size: 1.1rem;
+  margin-top: 4rem;
+
+  p { margin-bottom: 1.5rem; }
+
+  .btn {
+    background: $primary-color;
+    color: #000;
+    padding: 0.8rem 1.6rem;
+    border: none;
+    border-radius: $border-radius;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background $transition-fast, box-shadow $transition-fast;
+
+    &:hover { background: lighten($primary-color, 8%); box-shadow: $shadow-neon; }
+  }
+}
+
+/********** ANIMATIONS **********/
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+} 

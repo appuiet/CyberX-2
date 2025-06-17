@@ -1,0 +1,80 @@
+$error-bg: #0d0d0d;
+$error-glow: #ff004d;
+$error-text: #f0f0f0;
+$error-accent: #00fff7;
+
+.error-page {
+  height: 100vh;
+  background-color: $error-bg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  font-family: "Orbitron", sans-serif;
+  padding: 2rem;
+}
+
+.error-content {
+  text-align: center;
+  z-index: 2;
+
+  .error-title {
+    font-size: 3rem;
+    color: $error-glow;
+    text-shadow: 0 0 10px $error-glow;
+    margin-bottom: 1rem;
+  }
+
+  .error-message {
+    color: $error-text;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .error-button {
+    display: inline-block;
+    background-color: transparent;
+    border: 2px solid $error-accent;
+    color: $error-accent;
+    padding: 0.75rem 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+
+    &:hover {
+      background-color: $error-accent;
+      color: #000;
+      box-shadow: 0 0 15px $error-accent;
+    }
+  }
+}
+
+.error-glow {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, $error-glow 0%, transparent 70%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: blur(80px);
+  z-index: 1;
+  animation: pulse 3s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.7;
+  }
+}

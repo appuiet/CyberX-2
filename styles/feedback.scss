@@ -1,0 +1,230 @@
+$primary-color: #e30a0e;
+$background-color: #151414;
+$text-color: #fff;
+$font-main: "Orbitron", sans-serif;
+
+.feedback-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: $background-color;
+  color: $text-color;
+  font-family: $font-main;
+  
+  .main-content {
+    flex: 1;
+    padding: 3rem 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  
+  .feedback-intro {
+    text-align: center;
+    
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: $primary-color;
+      text-shadow: 0 0 8px rgba($primary-color, 0.8);
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+    
+    p {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      opacity: 0.9;
+      animation: fadeInUp 1s ease-out forwards;
+      animation-delay: 0.2s;
+    }
+  }
+  
+  .contact-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    animation: fadeInUp 1.2s ease-out forwards;
+    
+    .footer-photo {
+      width: 48px;
+      height: auto;
+      filter: drop-shadow(0 0 6px rgba($primary-color, 0.8));
+      animation: imageZoomIn 1s ease-out forwards;
+    }
+    
+    .photo-number {
+      font-size: 1.3rem;
+      font-weight: 600;
+      text-shadow: 0 0 4px rgba($primary-color, 0.7);
+    }
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    
+    .social-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.6rem;
+      animation: fadeInUp 1.4s ease-out forwards;
+      
+      a {
+        display: block;
+        
+        .footer-photo {
+          width: 40px;
+          height: auto;
+          filter: drop-shadow(0 0 5px rgba($primary-color, 0.8));
+          transition: transform 0.3s ease;
+          
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+      }
+      
+      .photo-number {
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: lighten($text-color, 15%);
+      }
+    }
+  }
+  
+  .feedback-form-container {
+    background: rgba(20, 20, 20, 0.9);
+    border: 2px solid $primary-color;
+    border-radius: 8px;
+    padding: 2.5rem;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba($primary-color, 0.6), inset 0 0 10px rgba($primary-color, 0.3);
+    animation: fadeInUpCard 0.8s ease-out forwards;
+    
+    h2 {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      text-shadow: 0 0 6px rgba($primary-color, 0.8);
+    }
+    
+    .feedback-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        
+        label {
+          font-size: 0.95rem;
+          margin-bottom: 0.4rem;
+          display: flex;
+          align-items: center;
+          gap: 0.4rem;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+        }
+        
+        input,
+        textarea {
+          background: rgba(0, 0, 0, 0.6);
+          border: 1px solid rgba($primary-color, 0.5);
+          border-radius: 4px;
+          padding: 0.8rem 1rem;
+          color: $text-color;
+          font-size: 1rem;
+          transition: border-color 0.3s ease, box-shadow 0.3s ease;
+          
+          &:focus {
+            outline: none;
+            border-color: $primary-color;
+            box-shadow: 0 0 8px rgba($primary-color, 0.8);
+            background: rgba(0, 0, 0, 0.8);
+          }
+        }
+        
+        textarea {
+          resize: vertical;
+        }
+      }
+      
+      .auth-button {
+        background: $primary-color;
+        border: none;
+        padding: 0.9rem;
+        font-size: 1rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        cursor: pointer;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.6rem;
+        transition: background 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 0 12px rgba($primary-color, 0.7);
+        
+        &:hover {
+          background: lighten($primary-color, 10%);
+          box-shadow: 0 0 20px rgba($primary-color, 1);
+        }
+      }
+    }
+  }
+}
+
+// Keyframes
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUpCard {
+  0% {
+    opacity: 0;
+    transform: translateY(60px) scale(0.95);
+    filter: blur(4px);
+  }
+  60% {
+    opacity: 0.7;
+    transform: translateY(-8px) scale(1.02);
+    filter: blur(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes imageZoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(1.2) translateY(20px);
+  }
+  60% {
+    opacity: 0.8;
+    transform: scale(1.05) translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}

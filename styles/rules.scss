@@ -1,0 +1,206 @@
+$bg-dark: #0b0b0b;
+$section-bg: #0d0d0d;
+$text-base: #c2c2c2;
+$accent: #e30a0e;
+$glow: rgba(227, 10, 14, 0.6);
+$font-sans: 'Share Tech Mono', monospace;
+$section-gap: 80px;
+$breakpoint-md: 768px;
+
+.section {
+    background: $section-bg;
+    color: $text-base;
+    font-family: $font-sans;
+    padding: $section-gap 20px;
+    overflow: hidden;
+
+    &+& {
+        margin-top: - ($section-gap / 1.5);
+    }
+
+    &__container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        font-size: 2.8rem;
+        text-transform: uppercase;
+        color: $accent;
+        text-align: center;
+        margin-bottom: 40px;
+        letter-spacing: 3px;
+        opacity: 0;
+        animation: fadeInUp 2s ease-out forwards;
+        animation-delay: 0.2s;
+        text-shadow:
+            0 0 5px $glow,
+            0 0 10px $glow,
+            0 0 20px $glow;
+    }
+}
+
+.video-section {
+    @extend .section;
+
+    &__wrapper {
+        padding: 12px;
+        border-radius: 4px;
+        text-align: center;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 1.5s ease-out forwards;
+        animation-delay: 0.4s;
+    }
+
+    &__player {
+        width: 100%;
+        border: 1px solid rgba($accent, 0.25);
+        border-radius: 2px;
+        box-shadow:
+            0 0 6px rgba($accent, 0.2),
+            inset 0 0 4px rgba($accent, 0.15);
+        background: #000;
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+        &:hover {
+            transform: scale(1.01);
+            box-shadow:
+                0 0 10px rgba($accent, 0.35),
+                inset 0 0 6px rgba($accent, 0.25);
+        }
+    }
+}
+
+
+.rules-section {
+    @extend .section;
+    counter-reset: rule;
+
+    &__container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        color: $accent;
+        text-align: center;
+        margin-bottom: 40px;
+        letter-spacing: 2px;
+        text-shadow: 0 0 8px $glow;
+        opacity: 0;
+        animation: fadeInUp 2s ease-out forwards;
+        animation-delay: 0.2s;
+    }
+
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        counter-reset: item;
+    }
+
+    &__item {
+        position: relative;
+        counter-increment: item;
+        display: flex;
+        align-items: flex-start;
+        padding: 12px 16px 12px 48px;
+        margin-bottom: 12px;
+        border-left: 2px solid $accent;
+        transition: background 0.2s ease;
+        opacity: 0;
+        transform: translateX(20px);
+        animation: fadeInRight 1s ease-out forwards;
+        animation-delay: calc(0.3s + var(--i) * 0.05s);
+
+        &::before {
+            content: counter(item);
+            position: absolute;
+            left: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: $accent;
+            color: #000;
+            width: 24px;
+            height: 24px;
+            line-height: 24px;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 50%;
+            box-shadow: 0 0 5px $glow;
+            font-size: 0.9rem;
+        }
+
+        &:hover {
+            background: rgba(227, 10, 14, 0.08);
+        }
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: $breakpoint-md) {
+    .section {
+        padding: 60px 10px;
+
+        &__title {
+            font-size: 2.2rem;
+            margin-bottom: 30px;
+        }
+    }
+
+    .video-section {
+        &__wrapper {
+            padding: 15px;
+        }
+
+        &__player {
+            max-width: 100%;
+        }
+    }
+
+    .rules-section {
+        &__title {
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        &__item {
+            padding: 10px 14px 10px 48px;
+            font-size: 0.95rem;
+
+            &::before {
+                left: 16px;
+                width: 20px;
+                height: 20px;
+                font-size: 0.8rem;
+                line-height: 20px;
+            }
+        }
+    }
+}
